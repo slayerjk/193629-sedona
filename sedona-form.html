@@ -18,27 +18,27 @@
 
   <div class="body-container">
 
-    <header class="header-menu clearfix">
+    <header class="header-menu">
       <div class="inner-container">
         <div class="header-menu__wrapper">
           <div class="header-menu__logo">
             <a href="index.html" class="header-menu__logo-link">
-              <img class="header-menu__logo-img" src="img/header__logo.png" width="67" height="56" alt="logo">  
+              <img class="header-menu__logo-img" src="img/header__logo.png" width="67" height="56" alt="logo">
             </a>
           </div>
-          <ul class="header-menu__col header-menu__col_left clearfix">
-            <li class="header-menu__li header-menu__li_left">
+          <ul class="header-menu__col header-menu__col_left">
+            <li class="header-menu__item header-menu__item_left">
               <a href="index.html" class="header-menu__link">Главная</a>
             </li>
-            <li class="header-menu__li header-menu__li_right">
+            <li class="header-menu__item header-menu__item_right">
               <a href="sedona-media.html" class="header-menu__link">Фото и видео</a>
             </li>
           </ul>
           <ul class="header-menu__col header-menu__col_right">
-            <li class="header-menu__li header-menu__li_left">
+            <li class="header-menu__item header-menu__item_left">
               <span class="header-menu__link">Форма отзыва</span>
             </li>
-            <li class="header-menu__li header-menu__li_right">
+            <li class="header-menu__item header-menu__item_right">
               <a href="https://htmlacademy.ru/" class="header-menu__link">Html Academy</a>
             </li>
           </ul>
@@ -71,26 +71,26 @@
         <h3 class="form__title">Представьтесь:</h3>
         <div class="form__block">
           <label for="name" class="form__label">Имя<sup>*</sup>:</label>
-          <input id="name" class="form__input" type="text" placeholder="Петр" required>
+          <input id="name" class="form__input" type="text" name="user-name" placeholder="Петр" required>
         </div>
         <div class="form__block">
           <label for="surname" class="form__label">Фамилия<sup>*</sup>:</label>
-          <input id="surname" class="form__input" type="text" placeholder="Иванов" required>
+          <input id="surname" class="form__input" type="text" name="user-surname" placeholder="Иванов" required>
         </div>
         <div class="form__block">
           <label for="patronymic" class="form__label">Отчество<sup>*</sup>:</label>
-          <input id="patronymic" class="form__input" type="text" placeholder="Александрович">
+          <input id="patronymic" class="form__input" type="text" name="user-patronymic" placeholder="Александрович">
         </div>
       </div>
       <div class="form__section">
         <h3 class="form__title">Контактная информация:</h3>
         <div class="form__block">
           <label for="phone" class="form__label"><sup>Контактный телефон*</sup>:</label>
-          <input id="phone" class="form__input form__input_contact" type="tel" placeholder="Введите телефон" required>
+          <input id="phone" class="form__input form__input_contact" type="tel" name="user-phone" placeholder="Введите телефон" required>
         </div>
         <div class="form__block">
           <label for="email" class="form__label">Электронная почта<sup>*</sup>:</label>
-          <input id="email" class="form__input form__input_contact" type="email" placeholder="Введите e-mail" required>
+          <input id="email" class="form__input form__input_contact" type="email" name="user-email" placeholder="Введите e-mail" required>
         </div>
       </div>
       <div class="form__section">
@@ -130,7 +130,7 @@
       <div class="form__section">
         <h3 class="form__title">Опишите свои эмоции:</h3>
         <div class="form__block">
-          <textarea class="form__input form__input_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__input form__input_textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <input class="form__submit" type="submit" value="Отправить отзыв">
       </div>
@@ -152,7 +152,7 @@
             <span class="icon-youtube footer__social-icon-font footer__social-icon-font_youtube"></span>
           </a>
         </div>
-        <div class="footer__wrapper-block footer__made-by clearfix">
+        <div class="footer__wrapper-block footer__made-by">
           <span class="sedona-description footer__sedona-description">Разработано</span>
           <a class="footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru"></a>
         </div>
@@ -162,5 +162,4 @@
   </div>
 
 </body>
-
 </html>
