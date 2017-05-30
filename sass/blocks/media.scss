@@ -1,0 +1,15 @@
+.media {
+  outline: 1px solid red;
+}
+
+.media__item {
+  outline: 1px solid red;
+}
+
+.media__item-like-link {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  background: #fff url('../img/icon-like.svg') no-repeat center;
+  outline: 1px solid red;
+}
