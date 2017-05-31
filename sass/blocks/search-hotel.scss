@@ -1,0 +1,25 @@
+.search-hotel {
+  outline: 1px solid red;
+}
+
+.search-hotel__wrapper {
+  width: 280px;//320
+  padding: {
+    top: 30px;
+    left: 20px;//20
+    right: 20px;//20
+    bottom: 40px;
+  }
+}
+
+.search-hotel__title {
+  @include font-title-big;
+}
+
+.search-hotel__desc {
+  @include font-desc-big;
+}
+
+.search-hotel__search-btn {
+
+}

@@ -1,4 +1,27 @@
 .intro {
-  background: #fff url('../img/bg-back-mobile@1x.jpg') no-repeat center;
   outline: 1px solid red;
+}
+
+.intro__wrapper {
+  background: #fff url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.intro__desc-block {
+  padding: {
+    top: 18px;
+    bottom: 20px;
+  }
+}
+
+.intro__title {
+  @include font-title;
+}
+
+.intro__desc {
+  @include font-desc;
+
+  &--bigger {
+    line-height: 1.8571428571em;//26
+  }
 }

@@ -3,7 +3,38 @@
 }
 
 .media__item {
+  padding: {
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+  }
   outline: 1px solid red;
+}
+
+.media__item-img {
+  @include center-block;
+}
+
+.media__item-title,
+.media__item-likes-count {
+  @include font-desc-big;
+  font-family: $font-sans-bold;
+  text-align: center;
+}
+
+.media__item-title {
+  text-align: left;
+
+  &--big {
+    @include font-title-big;
+  }
+}
+
+.media__item-author-is-text,
+.media__item-author-name {
+  @include font-desc-big;
+  text-align: left;
 }
 
 .media__item-like-link {
@@ -12,4 +43,8 @@
   height: 20px;
   background: #fff url('../img/icon-like.svg') no-repeat center;
   outline: 1px solid red;
+}
+
+.media__item-video-desc {
+  @include font-desc-big;
 }

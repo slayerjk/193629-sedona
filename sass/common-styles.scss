@@ -30,8 +30,9 @@ input[type="submit"] {
 ul {
   list-style: none; }
 
-.container {
+.wrapper-common {
   width: 100%;
-  /*max-width: ;*/
+  max-width: 320px;
   margin: 0 auto;
+  outline: 1px solid red;
 }

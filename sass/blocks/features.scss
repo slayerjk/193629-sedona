@@ -3,7 +3,19 @@
 }
 
 .features__item {
+  padding: {
+    top: 18px;
+    bottom: 35px;
+  }
   outline: 1px solid red;
+
+  &--blue {
+    background-color: $sedona-blue;
+  }
+
+  &--grey {
+    background-color: #eeeeee;
+  }
 }
 
 .features__item--bg {
@@ -16,4 +28,25 @@
 
 .features__item--bg2 {
   background: #fff url('../img/photo-bridge-mobile@1x.jpg') no-repeat center;
+}
+
+.features__item-title {
+  @include font-title
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.features__item-desc {
+  @include font-desc;
+
+  &--white {
+    color: #fff;
+  }
+
+  &--number {
+    display: block;
+    text-align: center;
+  }
 }

@@ -1,3 +1,23 @@
 .main-nav {
   outline: 1px solid red;
 }
+
+.main-nav__link {
+  padding: {
+    top: 15px;
+    bottom: 18px;
+  }
+  font: 1.8em/2.2222222222em $font-sans-bold; //18/40
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $sedona-blue;
+outline: 1px solid red;
+}
+
+.main-nav__logo {
+  width: 101.668px;
+  height: 83.984px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}

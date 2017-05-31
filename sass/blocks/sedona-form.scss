@@ -1,3 +1,55 @@
 .sedona-form {
   outline: 1px solid red;
 }
+
+.sedona-form__wrapper {
+  width: 280px; //320
+  padding: {
+    top: 30px;
+    left: 20px; //20
+    right: 20px; //20
+    bottom: 40px;
+  }
+}
+
+.sedona-form__section {
+  padding: {
+    top: 15px;
+    bottom: 15px;
+  }
+  outline: 1px solid red;
+}
+
+.sedona-form__title,
+.sedona-form__input {
+  @include font-title;
+}
+
+.sedona-form__input {
+  text-align: left;
+  text-transform: capitalize;
+  outline: 1px solid red;
+}
+
+.sedona-form__input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.sedona-form__input::-webkit-input-placeholder,
+.sedona-form__input:-moz-placeholder,
+.sedona-form__input::-moz-placeholder,
+.sedona-form__input:-ms-input-placeholder {
+  color: #000;
+}
+
+.sedona-form__label {
+  @include font-desc-big;
+  line-height: 1.8571428571em; //26
+  text-align: left;
+  outline: 1px solid red;
+  &--select {
+    font-family: $font-sans-bold;
+    color: #000;
+    text-transform: capitalize;
+  }
+}

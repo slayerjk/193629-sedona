@@ -5,7 +5,11 @@
   color: $f-color;
 }
 
-@mixin center() {
+@mixin center-block() {
+  margin: 0 auto;
+}
+
+@mixin center-position() {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,4 +19,32 @@
 @mixin pseudo() {
   content: "";
   position: absolute;
+}
+
+@mixin font-title() {
+  font: 1.8em/1.4444444444em $font-sans-bold;//18/26
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin font-title-big() {
+  font: 2.1em/1.2380952381em $font-sans-bold;//21/26
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin font-desc() {
+  font: 1.4em/1.5em $font-sans;//14/21
+  color: $sedona-grey;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin font-desc-big() {
+  font: 1.4em/1.7142857143em $font-sans;//14/24
+  color: $sedona-grey;
+  text-align: center;
+  text-transform: uppercase;
 }

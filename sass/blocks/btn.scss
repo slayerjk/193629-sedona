@@ -1,0 +1,6 @@
+.btn {
+  @include font-title-big;
+  color: #fff;
+  background-color: $sedona-blue;
+  cursor: pointer;
+}
