@@ -19,8 +19,9 @@
 .media__item-title,
 .media__item-likes-count {
   @include font-desc-big;
-  font-family: $font-sans-bold;
+  font-weight: bold;
   text-align: center;
+  color: #000;
 }
 
 .media__item-title {

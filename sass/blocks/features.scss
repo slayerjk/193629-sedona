@@ -16,18 +16,18 @@
   &--grey {
     background-color: #eeeeee;
   }
-}
 
-.features__item--bg {
-  min-height: 50px;
-}
+  &--bg {
 
-.features__item--bg1 {
-  background: #fff url('../img/photo-city-mobile@1x.jpg') no-repeat center;
-}
+  }
 
-.features__item--bg2 {
-  background: #fff url('../img/photo-bridge-mobile@1x.jpg') no-repeat center;
+  &--city {
+    background: #fff url('../img/photo-city-mobile@1x.jpg') no-repeat center;
+  }
+
+  &--bridge {
+    background: #fff url('../img/photo-bridge-mobile@1x.jpg') no-repeat center;
+  }
 }
 
 .features__item-title {

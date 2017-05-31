@@ -28,18 +28,10 @@
 .sedona-form__input {
   text-align: left;
   text-transform: capitalize;
+  @include placeholder {
+    color: #000;
+  }
   outline: 1px solid red;
-}
-
-.sedona-form__input::-webkit-input-placeholder {
-  color: #000;
-}
-
-.sedona-form__input::-webkit-input-placeholder,
-.sedona-form__input:-moz-placeholder,
-.sedona-form__input::-moz-placeholder,
-.sedona-form__input:-ms-input-placeholder {
-  color: #000;
 }
 
 .sedona-form__label {
@@ -48,7 +40,7 @@
   text-align: left;
   outline: 1px solid red;
   &--select {
-    font-family: $font-sans-bold;
+    font-weight: bold;
     color: #000;
     text-transform: capitalize;
   }
