@@ -1,0 +1,51 @@
+.media {
+  outline: 1px solid red;
+}
+
+.media__item {
+  padding: {
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+  }
+  outline: 1px solid red;
+}
+
+.media__item-img {
+  @include center-block;
+}
+
+.media__item-title,
+.media__item-likes-count {
+  @include font-desc-big;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+.media__item-title {
+  text-align: left;
+
+  &--big {
+    @include font-title-big;
+  }
+}
+
+.media__item-author-is-text,
+.media__item-author-name {
+  @include font-desc-big;
+  text-align: left;
+}
+
+.media__item-like-link {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  background: #fff url('../img/icon-like.svg') no-repeat center;
+  outline: 1px solid red;
+}
+
+.media__item-video-desc {
+  @include font-desc-big;
+}

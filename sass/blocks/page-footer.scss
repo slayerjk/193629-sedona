@@ -1,0 +1,53 @@
+.page-footer {
+  outline: 1px solid red;
+}
+
+.page-footer__inner-wrapper {
+  width: 280px;//320
+  padding: {
+    top: 30px;
+    left: 20px;//20
+    right: 20px;//20
+    bottom: 40px;
+  }
+}
+
+.page-footer__hashtag {
+  @include font-title-big;
+}
+
+.page-footer__socials {
+  width: 67px;//check
+  height: 20px;//check
+  outline: 1px solid red;
+}
+
+.page-footer__social-link {
+  display: inline-block;
+  width: 20px;//check
+  height: 20px;//check
+  outline: 1px solid red;
+}
+
+.page-footer__social-link--twitter {
+  background: #fff url('../img/icon-twitter.svg') no-repeat center;
+}
+
+.page-footer__social-link--facebook {
+  background: #fff url('../img/icon-facebook.svg') no-repeat center;
+}
+
+.page-footer__social-link--youtube {
+  background: #fff url('../img/icon-youtube.svg') no-repeat center;
+}
+
+.page-footer__desc {
+  @include font-desc;
+  line-height: 1.8571428571em;//26
+}
+
+.page-footer__made-by-link {
+  width: 26.943px;
+  height: 34.09px;
+  background: #fff url('../img/logo-htmlacademy.svg') no-repeat center;
+}
