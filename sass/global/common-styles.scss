@@ -8,6 +8,7 @@ a {
   color: #000000; }
 
 body {
+  min-width: 320px;
   font-size: 0.625em; }
 
 img,
@@ -30,9 +31,20 @@ input[type="submit"] {
 ul {
   list-style: none; }
 
-.wrapper-common {
-  width: 100%;
-  max-width: 320px;
+.wrapper-center {
+  width: auto;
   margin: 0 auto;
   outline: 1px solid red;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrappper-center {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrappper-center {
+    width: 1200px;
+  }
 }
