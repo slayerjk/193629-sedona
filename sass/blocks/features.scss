@@ -7,44 +7,33 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-
-  @media only screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
 }
 
 .features__item {
-  width: 280;//320
+  position: relative;
+  width: auto;//320
   padding: {
-    top: 18px;
+    top: 30px;
     left: 20px;
     right: 20px;
     bottom: 35px;
   }
   outline: 1px solid red;
 
-  @media only screen and (min-width: 768px) {
-    width: 175px;//255
-    padding: 0 40px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    width: 280px;//400
-    padding: 0 60px;
-  }
-
   &--blue {
+    padding-top: 50px;
     background-color: $sedona-blue;
   }
-
+  &--icon-desc {
+    padding-left: 90px;
+  }
   &--grey {
     background-color: #eeeeee;
   }
 
   &--bg {
-
+    min-height: 260px;//check
+    padding: 0;
   }
 
   &--city {
@@ -57,8 +46,7 @@
 }
 
 .features__item-title {
-  @include font-title
-
+  @include font-title;
   &--white {
     color: #fff;
   }
@@ -66,13 +54,66 @@
 
 .features__item-desc {
   @include font-desc;
-
   &--white {
     color: #fff;
   }
-
   &--number {
     display: block;
     text-align: center;
+  }
+}
+
+.features__item-title--left-align,
+.features__item-desc--left-align {
+  text-align: left;
+}
+
+.features__item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: 1px solid red;
+
+  &--house {
+    width: 75px;//74.695px
+    height: 73px;//72.346px
+    background: #fff url("../img/icon-house.svg") no-repeat center;
+  }
+  &--gift {
+    width: 63px;//63px
+    height: 75px;//75.084px
+    background: #fff url("../img/icon-gift.svg") no-repeat center;
+  }
+  &--food {
+    width: 76px;//76.166px
+    height: 69px;//68.959px
+    background: #fff url("../img/icon-burger.svg") no-repeat center;
+  }
+}
+
+//Tablet version
+@media only screen and (min-width: 768px) {
+  .features__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 22%;//check-259
+    padding: 0 5.21%;//40
+
+    &--bg {
+      width: 55%;//check-509
+      outline: 1px solid red;
+    }
+  }
+}
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .features__item {
+    width: 280px;//400
+    padding: 0 60px;
   }
 }
