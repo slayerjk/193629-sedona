@@ -42,12 +42,13 @@
   position: absolute;
   bottom: -37px;
   left: 50%;
-
   width: 320px;
   height: 37px;
   background: transparent url("../img/bg-triangle.svg") no-repeat center;
+  background-size: contain;
   transform: translateX(-50%);
-  outline: 1px solid red;
+  z-index: 1;
+  outline: 1px solid blue;
 }
 
 .intro__title {
@@ -62,8 +63,7 @@
   }
 }
 
-//Tablet version
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 325px) {
   .intro__desc-block-decor {
     display: none;
   }

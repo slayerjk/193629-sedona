@@ -30,22 +30,3 @@ input[type="submit"] {
 
 ul {
   list-style: none; }
-
-.wrapper-center {
-  max-width: 1200px;
-  width: auto;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-@media only screen and (max-width: 768px) {
-  .wrappper-center {
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .wrappper-center {
-    width: 1200px;
-  }
-}

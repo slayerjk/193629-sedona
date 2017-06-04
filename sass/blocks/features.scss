@@ -10,8 +10,8 @@
 }
 
 .features__item {
+  flex-basis: auto;
   position: relative;
-  width: auto;//320
   padding: {
     top: 30px;
     left: 20px;
@@ -100,20 +100,11 @@
   }
 
   .features__item {
-    width: 22%;//check-259
-    padding: 0 5.21%;//40
-
+    flex-basis: 33.33%;//check-259
+    padding: 0;
     &--bg {
-      width: 55%;//check-509
+      flex-basis: 66.67%;//check-509
       outline: 1px solid red;
     }
-  }
-}
-
-//Desktop version
-@media only screen and (min-width: 1200px) {
-  .features__item {
-    width: 280px;//400
-    padding: 0 60px;
   }
 }
