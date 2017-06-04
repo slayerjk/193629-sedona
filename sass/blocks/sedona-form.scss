@@ -3,16 +3,22 @@
 }
 
 .sedona-form__wrapper {
-  width: 280px; //320
   padding: {
     top: 30px;
-    left: 20px; //20
-    right: 20px; //20
+    left: 6.25%; //20
+    right: 6.25%; //20
     bottom: 40px;
   }
 }
 
+.sedona-form__sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .sedona-form__section {
+  width: 100%;
   padding: {
     top: 15px;
     bottom: 15px;
@@ -43,5 +49,68 @@
     font-weight: bold;
     color: #000;
     text-transform: capitalize;
+  }
+}
+
+.sedona-form__require-text {
+  @include font-desc-big;
+  line-height: 1.8571428571em;
+}
+
+//Tablet version
+@media only screen and (min-width: 768px) {
+  .sedona-form__wrapper {
+    padding: {
+      left: 7.8125%; //60
+      left: 7.8125%; //60
+    }
+  }
+
+  .sedona-form__sections {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sedona-form__section {
+    &--half-size {
+      width: 50%;
+    }
+    &:nth-of-type(1) {
+      order: 1;
+    }
+    &:nth-of-type(2) {
+      order: 3;
+    }
+    &:nth-of-type(3) {
+      order: 2;
+    }
+    &:nth-of-type(4) {
+      order: 4;
+    }
+    &:nth-of-type(5) {
+      order: 5;
+    }
+    &:last-of-type {
+      order: 6;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .sedona-form__wrapper {
+    padding: {
+      left: 10%; //120
+      left: 10%; //120
+    }
+  }
+
+  .sedona-form__section {
+    &--half-size {
+      width: 400px;
+    }
   }
 }

@@ -1,0 +1,24 @@
+.socials {
+  width: 67px;//check
+  height: 20px;//check
+  outline: 1px solid red;
+}
+
+.socials__btn {
+  display: inline-block;
+  width: 20px;//check
+  height: 20px;//check
+  vertical-align: top;
+  text-indent: -10000px;
+  outline: 1px solid red;
+
+  &--twitter {
+    background: $sedona-blue url('../img/icon-twitter.svg') no-repeat center;
+  }
+  &--facebook {
+    background: $sedona-blue url('../img/icon-facebook.svg') no-repeat center;
+  }
+  &--youtube {
+    background: $sedona-blue url('../img/icon-youtube.svg') no-repeat center;
+  }
+}

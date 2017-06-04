@@ -2,23 +2,38 @@
   outline: 1px solid red;
 }
 
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
 .features__item {
+  flex-basis: auto;
+  position: relative;
   padding: {
-    top: 18px;
+    top: 30px;
+    left: 20px;
+    right: 20px;
     bottom: 35px;
   }
   outline: 1px solid red;
 
   &--blue {
+    padding-top: 50px;
     background-color: $sedona-blue;
   }
-
+  &--icon-desc {
+    padding-left: 90px;
+  }
   &--grey {
     background-color: #eeeeee;
   }
 
   &--bg {
-
+    min-height: 260px;//check
+    padding: 0;
   }
 
   &--city {
@@ -31,8 +46,7 @@
 }
 
 .features__item-title {
-  @include font-title
-
+  @include font-title;
   &--white {
     color: #fff;
   }
@@ -40,13 +54,57 @@
 
 .features__item-desc {
   @include font-desc;
-
   &--white {
     color: #fff;
   }
-
   &--number {
     display: block;
     text-align: center;
+  }
+}
+
+.features__item-title--left-align,
+.features__item-desc--left-align {
+  text-align: left;
+}
+
+.features__item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: 1px solid red;
+
+  &--house {
+    width: 75px;//74.695px
+    height: 73px;//72.346px
+    background: #fff url("../img/icon-house.svg") no-repeat center;
+  }
+  &--gift {
+    width: 63px;//63px
+    height: 75px;//75.084px
+    background: #fff url("../img/icon-gift.svg") no-repeat center;
+  }
+  &--food {
+    width: 76px;//76.166px
+    height: 69px;//68.959px
+    background: #fff url("../img/icon-burger.svg") no-repeat center;
+  }
+}
+
+//Tablet version
+@media only screen and (min-width: 768px) {
+  .features__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    flex-basis: 33.33%;//check-259
+    padding: 0;
+    &--bg {
+      flex-basis: 66.67%;//check-509
+      outline: 1px solid red;
+    }
   }
 }
