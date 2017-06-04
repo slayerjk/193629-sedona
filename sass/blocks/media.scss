@@ -63,6 +63,11 @@
 
   .media__item {
     width: 50%;
+
+    &--title-img {
+      flex-basis: 100%;
+
+    }
   }
 }
 

@@ -1,7 +1,7 @@
-@import 'helpers/normalize.scss';
 @import 'helpers/variables';
 @import 'helpers/mixins';
 
+@import 'global/normalize.scss';
 @import 'global/fonts.scss';
 @import 'global/common-styles.scss';
 
@@ -15,3 +15,4 @@
 @import 'blocks/media.scss';
 @import 'blocks/sedona-form.scss';
 @import 'blocks/page-footer.scss';
+@import 'blocks/socials.scss';
