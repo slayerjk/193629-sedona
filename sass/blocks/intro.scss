@@ -8,25 +8,13 @@
 
 .intro__images-block {
   position: relative;
-  min-height: 400px; //check-temp
-  background: $sedona-blue url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+  height: 381px; //check-temp
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
   background-size: cover;
 }
 
 .intro__welcome-text-img {
   @include center-position;
-  outline: 1px solid red;
-}
-
-.intro__images-block-decor {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  max-width: 100%;
-  width: 320px;
-  height: 27px;
-  background: transparent url("../img/bg-intro-triangle-mobile.svg") no-repeat center;
-  transform: translateX(-50%);
   outline: 1px solid red;
 }
 
@@ -42,10 +30,10 @@
   position: absolute;
   bottom: -37px;
   left: 50%;
-  width: 320px;
+  width: 100%;
   height: 37px;
   background: transparent url("../img/bg-triangle.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
   transform: translateX(-50%);
   z-index: 1;
   outline: 1px solid blue;
@@ -57,14 +45,27 @@
 
 .intro__desc {
   @include font-desc;
-
   &--bigger {
     line-height: 1.8571428571em; //26
   }
 }
 
-@media only screen and (min-width: 325px) {
+//Mini BP
+@media only screen and (min-width: 321px) {
+  .intro__images-block {
+    height: 515px;
+    background: url("../img/bg-intro-triangle-tablet.png") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+    background-size: contain, cover;
+  }
   .intro__desc-block-decor {
     display: none;
+  }
+}
+
+//Mini BP
+@media only screen and (min-width: 769px) {
+  .intro__images-block {
+    background: url("../img/bg-intro-triangle-desktop.png") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+    background-size: contain, cover;
   }
 }
