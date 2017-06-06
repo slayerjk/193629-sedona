@@ -1,5 +1,5 @@
 .intro {
-  outline: 1px solid red;
+
 }
 
 .intro__wrapper {
@@ -8,21 +8,27 @@
 
 .intro__images-block {
   position: relative;
-  height: 381px; //check-temp
-  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+  height: 384px; //check-temp
+  background:
+    url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
   background-size: cover;
 }
 
 .intro__welcome-text-img {
+  max-width: 87.5%;
+}
+
+.intro__welcome-text-img {
   @include center-position;
-  outline: 1px solid red;
 }
 
 .intro__desc-block {
   position: relative;
   padding: {
-    top: 18px;
-    bottom: 20px;
+    top: 31px;
+    left: 6.25%;
+    right: 6.25%;
+    bottom: 4px;
   }
 }
 
@@ -41,6 +47,7 @@
 
 .intro__title {
   @include font-title;
+  margin-bottom: 29px;
 }
 
 .intro__desc {

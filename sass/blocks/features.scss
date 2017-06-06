@@ -9,26 +9,43 @@
   align-items: stretch;
 }
 
+.features__inner-wrapper {
+  padding: 0 6.25%;
+  background-color: #eeeeee;
+}
+
 .features__item {
   flex-basis: auto;
   position: relative;
   padding: {
     top: 30px;
-    left: 20px;
-    right: 20px;
-    bottom: 35px;
+    left: 6.25%;
+    right: 6.25%;
+    bottom: 42px;
   }
-  outline: 1px solid red;
-
   &--blue {
-    padding-top: 50px;
+    padding-top: 38px;
     background-color: $sedona-blue;
   }
+  &:first-of-type {
+    padding-top: 76px;
+  }
   &--icon-desc {
-    padding-left: 90px;
+    padding: {
+      top: 28px;
+      left: 21.5625%;//69px;
+      bottom: 0px;
+    }
+  }
+  &:nth-of-type(3) {
+    padding-top: 34px;
+  }
+  &:nth-of-type(5) {
+    padding-bottom: 36px;
   }
   &--grey {
     background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
   }
 
   &--bg {
@@ -47,8 +64,12 @@
 
 .features__item-title {
   @include font-title;
+  margin-bottom: 10px;
   &--white {
     color: #fff;
+  }
+  &--icon {
+    margin-bottom: 15px;
   }
 }
 
@@ -59,35 +80,25 @@
   }
   &--number {
     display: block;
+    margin-bottom: 15px;
     text-align: center;
   }
 }
 
-.features__item-title--left-align,
-.features__item-desc--left-align {
+.features__item-title--icon,
+.features__item-desc--icon {
   text-align: left;
 }
 
 .features__item-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 17%;
+  left: 6%;
+  width: 40px;
+  height: 40px;
   outline: 1px solid red;
-
-  &--house {
-    width: 75px;//74.695px
-    height: 73px;//72.346px
-    background: #fff url("../img/icon-house.svg") no-repeat center;
-  }
-  &--gift {
-    width: 63px;//63px
-    height: 75px;//75.084px
-    background: #fff url("../img/icon-gift.svg") no-repeat center;
-  }
-  &--food {
-    width: 76px;//76.166px
-    height: 69px;//68.959px
-    background: #fff url("../img/icon-burger.svg") no-repeat center;
+  &--burger {
+    top: 14%;
   }
 }
 
