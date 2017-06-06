@@ -8,20 +8,29 @@
   justify-content: space-between;
   align-items: center;
   padding: {
-    top: 30px;
-    left: 20px;//20
-    right: 20px;//20
+    top: 37px;
+    left: 20px; //20
+    right: 20px; //20
     bottom: 40px;
   }
 }
 
 .page-footer__hashtag {
   @include font-title-big;
+  margin-bottom: 38px;
 }
 
 .page-footer__desc {
   @include font-desc;
-  line-height: 1.8571428571em;//26
+  line-height: 1.8571428571em; //26
+}
+
+.page-footer__made-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin-top: 40px;
 }
 
 .page-footer__made-by-link {
@@ -30,9 +39,12 @@
   background: #fff url('../img/logo-htmlacademy.svg') no-repeat center;
 }
 
+
+/*
 //Tablet version
 @media only screen and (min-width: 768px) {
   .page-footer__inner-wrapper {
     flex-direction: row;
   }
 }
+*/

@@ -13,8 +13,8 @@
   position: absolute;
   bottom: 7%;
   right: 6%;
-  width: 25px;//22.928px
-  height: 27px;//21.982px
+  width: 25px; //22.928px
+  height: 27px; //21.982px
   background: #fff url("../img/icon-menu.svg") no-repeat center;
   border: none;
   cursor: pointer;
@@ -38,8 +38,8 @@
 
 .main-nav__item--logo {
   position: relative;
-  width: 102px;//101.668px
-  min-height: 59px;//check-temp
+  width: 102px; //101.668px
+  min-height: 59px; //check-temp
   margin: 0 auto;
   z-index: 1;
   outline: 1px solid green;
@@ -47,41 +47,57 @@
 
 .main-nav__logo-link {
   position: absolute;
-  width: 102px;//101.668px
-  min-height: 84px;//83.984px
+  width: 102px; //101.668px
+  min-height: 84px; //83.984px
 }
 
+
+/*
 //Tablet version
 @media only screen and (min-width: 768px) {
+  .main-nav {
+    padding: {
+      left: 6.38%; //49px;
+      right: 3.38%; //26px;
+    }
+  }
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-
   .main-nav__inner-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    width: 40%;
-    outline: 5px solid green;
+    &--left {
+      width: 33% //233px/693;
+    }
+    &--right {
+      width: 36.36%; //252px/693;
+    }
   }
-
   .main-nav__toggle-btn {
     display: none;
   }
-
   .main-nav__link {
+    @include font-desc-big;
     width: auto;
+    padding: {
+      top: 15px;
+      bottom: 15px;
+    }
+    line-height: 1.8571428571em; //26
+    font-weight: bold;
     color: #000;
     background-color: #fff;
     border: none;
   }
-
   .main-nav__item--logo {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 48%;
+    transform: translate(-48%, 0);
   }
 }
+*/

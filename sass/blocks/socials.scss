@@ -1,14 +1,18 @@
 .socials {
-  width: 67px;//check
-  height: 20px;//check
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150px;
   outline: 1px solid red;
 }
 
 .socials__btn {
   display: inline-block;
-  width: 20px;//check
-  height: 20px;//check
-  vertical-align: top;
+  width: 45px;//check
+  padding: {
+    top: 29px;
+    bottom: 8px;
+  }
   text-indent: -10000px;
   outline: 1px solid red;
 

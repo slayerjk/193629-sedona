@@ -9,18 +9,25 @@
   align-items: center;
   padding: {
     top: 30px;
-    bottom: 40px;
+    bottom: 47px;
   }
 }
 
 .search-hotel__title {
   @include font-title-big;
+  margin-bottom: 20px;
 }
 
 .search-hotel__desc {
   @include font-desc-big;
+  padding: 0 23px;
+  margin-bottom: 34px;
 }
 
 .search-hotel__search-btn {
-
+  width: 87.5%;
+  padding: {
+    top: 16px;
+    bottom: 16px;
+  }
 }
