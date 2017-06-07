@@ -13,16 +13,32 @@
     right: 20px; //20
     bottom: 40px;
   }
+  &--media {
+    padding: {
+      top: 122px;
+      bottom: 20px;
+    }
+  }
+  &--sedona-form {
+    padding: {
+      top: 18px;
+      bottom: 20px;
+    }
+  }
 }
 
 .page-footer__hashtag {
-  @include font-title-big;
   margin-bottom: 38px;
+  font: bold 2.1em/1.2380952381em $font-sans;//21/26
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page-footer__desc {
-  @include font-desc;
-  line-height: 1.8571428571em; //26
+  font: 1.4em/1.8571428571em $font-sans;//14/26
+  color: $sedona-grey;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page-footer__made-by {

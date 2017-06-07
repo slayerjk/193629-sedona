@@ -4,10 +4,8 @@
 
 .sedona-form__wrapper {
   padding: {
-    top: 30px;
-    left: 6.25%; //20
-    right: 6.25%; //20
-    bottom: 40px;
+    top: 0px;
+    bottom: 0px;
   }
 }
 
@@ -18,46 +16,190 @@
 }
 
 .sedona-form__section {
-  width: 100%;
   padding: {
-    top: 15px;
-    bottom: 15px;
+    top: 20px;
+    bottom: 33px;
+    left: 6.25%; //20
+    right: 6.25%; //20
   }
-  outline: 1px solid red;
+  border-top: 1px solid #d6d6d6;
+  &--title {
+    padding: {
+      top: 17px;
+      bottom: 25px;
+      left: 6.25%; //20
+      right: 6.25%; //20
+    }
+  }
+}
+
+.sedona-form__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sedona-form__block--contacts {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 .sedona-form__title,
 .sedona-form__input {
-  @include font-title;
+  font: bold 1.8em/1.4444444444em $font-sans;//18/26
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.sedona-form__input {
-  text-align: left;
-  text-transform: capitalize;
-  @include placeholder {
-    color: #000;
-  }
-  outline: 1px solid red;
-}
-
-.sedona-form__label {
-  @include font-desc-big;
-  line-height: 1.8571428571em; //26
-  text-align: left;
-  outline: 1px solid red;
+.sedona-form__title {
+  margin-bottom: 23px;
   &--select {
-    font-weight: bold;
-    color: #000;
-    text-transform: capitalize;
+    margin-bottom: 32px;
   }
 }
 
 .sedona-form__require-text {
-  @include font-desc-big;
-  line-height: 1.8571428571em;
+  font: 1.4em/1.8571428571em $font-sans;//14/26
+  color: $sedona-grey;
+  text-align: center;
+  text-transform: uppercase;
 }
 
+.sedona-form__cotacts-icon {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  width: 55px;
+  height: 53px;
+  outline: 1px solid red;
+  &--tel {
+    background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center;
+  }
+  &--mail {
+    background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center;
+  }
+}
 
+.sedona-form__input {
+  width: 100%;
+  padding: {
+    top: 14px;
+    bottom: 14px;
+    left: 20px;
+  }
+  text-align: left;
+  text-transform: capitalize;
+  @include placeholder {
+    color: #000;
+    text-align: left;
+    text-transform: none;
+  }
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+.sedona-form__label {
+  margin-right: 15px;
+  font: 1.4em/1.8571428571em $font-sans;//14/26
+  color: $sedona-grey;
+  text-transform: uppercase;
+  text-align: left;
+  outline: 1px solid red;
+  &--contacts {
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+}
+
+.sedona-form__section--select {
+  padding-bottom: 25px;
+}
+
+.sedona-form__input--radio,
+.sedona-form__input--checkbox {
+  display: none;
+}
+
+.sedona-form__label--select {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-left: 30%;
+  margin-bottom: 15px;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #000;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.sedona-form__label--radio::before {
+  @include pseudo;
+  top: -25%;
+  left: 0%;
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  outline: 1px solid red;
+}
+
+.sedona-form__input--radio[id="pro"]:checked + .sedona-form__label--radio[for="pro"]::after,
+.sedona-form__input--radio[id="contra"]:checked + .sedona-form__label--radio[for="contra"]::after,
+.sedona-form__input--radio[id="na"]:checked + .sedona-form__label--radio[for="na"]::after {
+  @include pseudo;
+  top: 20%;
+  left: 7%;
+  width: 21px;
+  height: 21px;
+  background-color: #000;
+  border-radius: 50%;
+  outline: 1px solid red;
+}
+
+.sedona-form__label--checkbox::before {
+  @include pseudo;
+  top: 0%;
+  left: 0%;
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.sedona-form__input--checkbox[id="devil-bridge"]:checked + .sedona-form__label--checkbox[for="devil-bridge"]::after,
+.sedona-form__input--checkbox[id="slide-park"]:checked + .sedona-form__label--checkbox[for="slide-park"]::after,
+.sedona-form__input--checkbox[id="bell-mount"]:checked + .sedona-form__label--checkbox[for="bell-mount"]::after,
+.sedona-form__input--checkbox[id="red-rocks"]:checked + .sedona-form__label--checkbox[for="red-rocks"]::after {
+  @include pseudo;
+  top: 0%;
+  left: 0%;
+  width: 23px;
+  height: 16px;
+  background: transparent url("../img/icon-tick.svg") no-repeat center;
+  outline: 1px solid red;
+}
+
+.sedona-form__input--textarea {
+  height: 153px;
+}
+
+.sedona-form__submit {
+  width: 100%;
+  padding: {
+    top: 16px;
+    bottom: 16px;
+  }
+}
+
+/*
 //Tablet version
 @media only screen and (min-width: 768px) {
   .sedona-form__wrapper {
@@ -99,6 +241,8 @@
     }
   }
 }
+*/
+
 
 /*
 //Desktop version

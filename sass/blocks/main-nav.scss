@@ -26,8 +26,7 @@
     top: 8px;
     bottom: 7px;
   }
-  font: 1.8em/2.2222222222em $font-sans; //18/40
-  font-weight: bold;
+  font: bold 1.8em/2.2222222222em $font-sans; //18/40
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -39,10 +38,14 @@
 .main-nav__item--logo {
   position: relative;
   width: 102px; //101.668px
-  min-height: 59px; //check-temp
+  min-height: 59px;
   margin: 0 auto;
   z-index: 1;
   outline: 1px solid green;
+}
+
+.main-nav__item--logo-not-index {
+  min-height: 56px;
 }
 
 .main-nav__logo-link {
@@ -50,6 +53,7 @@
   width: 102px; //101.668px
   min-height: 84px; //83.984px
 }
+
 
 
 /*
@@ -81,14 +85,14 @@
     display: none;
   }
   .main-nav__link {
-    @include font-desc-big;
     width: auto;
     padding: {
       top: 15px;
       bottom: 15px;
     }
-    line-height: 1.8571428571em; //26
-    font-weight: bold;
+    font: bold 1.4em/1.8571428571em $font-sans;//14/26
+    text-align: center;
+    text-transform: uppercase;
     color: #000;
     background-color: #fff;
     border: none;

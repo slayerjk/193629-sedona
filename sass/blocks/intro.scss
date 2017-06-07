@@ -9,11 +9,23 @@
   height: 384px;
   background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
   background-size: cover;
+
+  &--not-index {
+    height: 157px;
+    ;
+  }
 }
 
 .intro__welcome-text-img {
   @include center-position;
   max-width: 87.5%;
+}
+
+.intro__sedona-text-img {
+  @include center-position;
+  top: 43%;
+  left: 49.5%;
+  max-width: 69.9%;
 }
 
 .intro__desc-block {
@@ -22,7 +34,15 @@
     top: 31px;
     left: 6.25%;
     right: 6.25%;
-    bottom: 4px;
+    bottom: 14px;
+  }
+  &--not-index {
+    padding: {
+      top: 26px;
+      left: 7.5%;
+      right: 7.5%;
+      bottom: 30px;
+    }
   }
 }
 
@@ -40,17 +60,26 @@
 }
 
 .intro__title {
-  @include font-title;
-  padding: 0 7px;
   margin-bottom: 29px;
+  padding: 0 7px;
+  font: bold 1.8em/1.4444444444em $font-sans; //18/26
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .intro__desc {
-  @include font-desc;
+  font: 1.4em/1.5em $font-sans; //14/21
+  color: $sedona-grey;
+  text-align: center;
+  text-transform: uppercase;
   &--bigger {
     line-height: 1.8571428571em; //26
   }
+  &--not-index {
+    //check line-height
+  }
 }
+
 
 
 /*
@@ -85,7 +114,9 @@
     }
   }
   .intro__title {
-    @include font-title-big;
+    font: bold 2.1em/1.2380952381em $font-sans;//21/26
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 */

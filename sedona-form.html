@@ -36,7 +36,7 @@
               <a href="https://htmlacademy.ru/" class="main-nav__link">Html Academy</a>
             </li>
           </div>
-          <li class="main-nav__item main-nav__item--logo">
+          <li class="main-nav__item main-nav__item--logo main-nav__item--logo-not-index">
             <a href="index.html" class="main-nav__logo-link">
               <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="logo">
             </a>
@@ -48,12 +48,12 @@
 
   <section class="intro">
     <div class="intro__wrapper wrapper-center">
-      <div class="intro__images-block">
-        <img class="intro__welcome-text-img" src="img/text-sedona-index.svg" width="460px" height="351px" alt="sedona-welcome-text">
+      <div class="intro__images-block intro__images-block--not-index">
+        <img class="intro__sedona-text-img" src="img/text-sedona.svg" width="460" height="80" alt="sedona-welcome-text">
       </div>
-      <div class="intro__desc-block">
+      <div class="intro__desc-block intro__desc-block--not-index">
         <h1 class="intro__title">Оставьте свой отзыв</h1>
-        <p class="intro__desc">
+        <p class="intro__desc intro__desc--not-index">
           Помогите нашим отелям стать лучше! Оствьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
@@ -63,7 +63,7 @@
   <section class="sedona-form">
     <div class="sedona-form__wrapper wrapper-center">
       <form class="sedona-form__sections" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="sedona-form__section sedona-form__section--half-size">
+        <div class="sedona-form__section sedona-form__section--title sedona-form__section--half-size">
           <h2 class="sedona-form__title">Представьтесь:</h2>
           <div class="sedona-form__block">
             <label for="name" class="sedona-form__label">Имя<sup>*</sup>:</label>
@@ -74,53 +74,55 @@
             <input id="surname" class="sedona-form__input" type="text" name="user-surname" placeholder="Иванов" required>
           </div>
           <div class="sedona-form__block">
-            <label for="patronymic" class="sedona-form__label">Отчество<sup>*</sup>:</label>
+            <label for="patronymic" class="sedona-form__label">Отчество:</label>
             <input id="patronymic" class="sedona-form__input" type="text" name="user-patronymic" placeholder="Александрович">
           </div>
         </div>
         <div class="sedona-form__section">
           <h2 class="sedona-form__title">Контактная информация:</h2>
-          <div class="sedona-form__block">
-            <label for="phone" class="sedona-form__label">Контактный телефон<sup>*</sup>:</label>
-            <input id="phone" class="sedona-form__input sedona-form__input--contact" type="tel" name="user-phone" placeholder="Введите телефон" required>
+          <div class="sedona-form__block sedona-form__block--contacts">
+            <div class="sedona-form__cotacts-icon sedona-form__cotacts-icon--tel"></div>
+            <label for="phone" class="sedona-form__label sedona-form__label--contacts">Контактный телефон<sup>*</sup>:</label>
+            <input id="phone" class="sedona-form__input" type="tel" name="user-phone" placeholder="Введите телефон" required>
           </div>
-          <div class="sedona-form__block">
-            <label for="email" class="sedona-form__label">Электронная почта<sup>*</sup>:</label>
-            <input id="email" class="sedona-form__input sedona-form__input--contact" type="email" name="user-email" placeholder="Введите e-mail" required>
+          <div class="sedona-form__block sedona-form__block--contacts">
+            <div class="sedona-form__cotacts-icon sedona-form__cotacts-icon--mail"></div>
+            <label for="email" class="sedona-form__label sedona-form__label--contacts">Электронная почта<sup>*</sup>:</label>
+            <input id="email" class="sedona-form__input" type="email" name="user-email" placeholder="Введите e-mail" required>
           </div>
         </div>
-        <div class="sedona-form__section sedona-form__section--half-size">
-          <h2 class="sedona-form__title">Ваше общее впечатление:</h2>
-          <div class="sedona-form__block">
+        <div class="sedona-form__section sedona-form__section--select sedona-form__section--half-size">
+          <h2 class="sedona-form__title sedona-form__title--select">Ваше общее впечатление:</h2>
+          <div class="sedona-form__block sedona-form__block--select">
             <input id="pro" class="sedona-form__input sedona-form__input--radio" type="radio" name="vote" value="vote-pro" checked>
-            <label for="pro" class="sedona-form__label sedona-form__label--select">Скорее положительное</label>
+            <label for="pro" class="sedona-form__label sedona-form__label--select sedona-form__label--radio">Скорее положительное</label>
           </div>
-          <div class="sedona-form__block">
+          <div class="sedona-form__block sedona-form__block--select">
             <input id="contra" class="sedona-form__input sedona-form__input--radio" type="radio" name="vote" value="vote-contra">
-            <label for="contra" class="sedona-form__label sedona-form__label--select">Скорее отрицательное</label>
+            <label for="contra" class="sedona-form__label sedona-form__label--select sedona-form__label--radio">Скорее отрицательное</label>
           </div>
-          <div class="sedona-form__block">
+          <div class="sedona-form__block sedona-form__block--select">
             <input id="na" class="sedona-form__input sedona-form__input--radio" type="radio" name="vote" value="vote-na">
-            <label for="na" class="sedona-form__label sedona-form__label--select">Затрудняюсь ответить</label>
+            <label for="na" class="sedona-form__label sedona-form__label--select sedona-form__label--radio">Затрудняюсь ответить</label>
           </div>
         </div>
-        <div class="sedona-form__section">
-          <h2 class="sedona-form__title">Посещенные достопримечательности:</h2>
-          <div class="sedona-form__block">
-            <input id="devil-bridge" class="sedona-form__input" type="checkbox" name="visited" value="visited-devil-bridge" checked>
-            <label for="devil-bridge" class="sedona-form__label sedona-form__label--select">Мост Дьявола</label>
+        <div class="sedona-form__section sedona-form__section--select">
+          <h2 class="sedona-form__title sedona-form__title--select">Посещенные достопримечательности:</h2>
+          <div class="sedona-form__block sedona-form__block--select">
+            <input id="devil-bridge" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-devil-bridge" checked>
+            <label for="devil-bridge" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Мост Дьявола</label>
           </div>
-          <div class="sedona-form__block">
-            <input id="slide-park" class="sedona-form__input" type="checkbox" name="visited" value="visited-slide-park" checked>
-            <label for="slide-park" class="sedona-form__label sedona-form__label--select">Слайд-парк</label>
+          <div class="sedona-form__block sedona-form__block--select">
+            <input id="slide-park" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-slide-park" checked>
+            <label for="slide-park" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Слайд-парк</label>
           </div>
-          <div class="sedona-form__block">
-            <input id="bell-mount" class="sedona-form__input" type="checkbox" name="visited" value="visited-bell-mount">
-            <label for="bell-mount" class="sedona-form__label sedona-form__label--select">Гора-колокол</label>
+          <div class="sedona-form__block sedona-form__block--select">
+            <input id="bell-mount" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-bell-mount">
+            <label for="bell-mount" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Гора-колокол</label>
           </div>
-          <div class="sedona-form__block">
-            <input id="red-rocks" class="sedona-form__input" type="checkbox" name="visited" value="visited-red-rocks" checked>
-            <label for="red-rocks" class="sedona-form__label sedona-form__label--select">Красные скалы</label>
+          <div class="sedona-form__block sedona-form__block--select">
+            <input id="red-rocks" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-red-rocks" checked>
+            <label for="red-rocks" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Красные скалы</label>
           </div>
         </div>
         <div class="sedona-form__section">
@@ -139,7 +141,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper-center">
-      <div class="page-footer__inner-wrapper page-footer__inner-wrapper--index">
+      <div class="page-footer__inner-wrapper page-footer__inner-wrapper--sedona-form">
         <div class="page-footer__wrapper-block page-footer__twitter-tag">
           <a class="page-footer__hashtag" href="#">#visitsedona</a>
         </div>

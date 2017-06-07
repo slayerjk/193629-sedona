@@ -14,14 +14,19 @@
 }
 
 .search-hotel__title {
-  @include font-title-big;
   margin-bottom: 20px;
+  font: bold 2.1em/1.2380952381em $font-sans;//21/26
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .search-hotel__desc {
-  @include font-desc-big;
-  padding: 0 23px;
   margin-bottom: 34px;
+  padding: 0 23px;
+  font: 1.4em/1.7142857143em $font-sans;//14/24
+  color: $sedona-grey;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .search-hotel__search-btn {
