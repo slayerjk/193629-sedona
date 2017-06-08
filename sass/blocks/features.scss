@@ -43,25 +43,24 @@
   &--bridge {
     background: #fff url('../img/photo-bridge-mobile@1x.jpg') no-repeat center;
   }
-}
-
-.features__item--icon-desc {
-  padding: {
-    top: 28px;
-    left: 21.5625%; //69px;
-    right: 10%;
+  &--icon-desc {
+    padding: {
+      top: 28px;
+      left: 21.5625%; //69px;
+      right: 10%;
+    }
   }
-  &:nth-of-type(3) {
+  &--house {
     padding-top: 34px;
   }
-  &:nth-of-type(5) {
+  &--burger {
     padding-bottom: 37px;
   }
 }
 
 .features__item-title {
   margin-bottom: 10px;
-  font: bold 1.8em/1.4444444444em $font-sans;//18/26
+  font: bold 1.8em/1.4444444444em $font-sans; //18/26
   text-align: center;
   text-transform: uppercase;
   &--white {
@@ -73,7 +72,7 @@
 }
 
 .features__item-desc {
-  font: 1.4em/1.5em $font-sans;//14/21
+  font: 1.4em/1.5em $font-sans; //14/21
   color: $sedona-grey;
   text-align: center;
   text-transform: uppercase;
@@ -108,55 +107,116 @@
   }
 }
 
-
-
-/*
-    //Tablet version
-    @media only screen and (min-width: 768px) {
-      .features__wrapper {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-wrap: wrap;
-      }
-      .features__item {
-        width: 33%;
-        height: 257px;
-        padding: 0;
-        outline: 1px solid red;
-        &--blue {}
-        &--icon-desc {
-          padding: 0;
-        }
-        &--bg {
-          width: 67%;
-          background-size: contain;
-        }
-      }
-      .features__item-title {
-        font: bold 2.1em/1.2380952381em $font-sans;//21/26
-        text-align: center;
-        text-transform: uppercase;
-        &--white {
-          padding: {
-            top: 45px;
-            left: 20px;
-            right: 20px;
-          }
-        }
-          &--icon {
-            padding-top: 70px;
-          }
-        }
-
-      .features__item-desc {
-        &--number {
-          margin: 0;
-          margin-bottom: 20px;
-        }
-        &--white {
-          padding: 0 41px;
-        }
+//Tablet version
+@media only screen and (min-width: 768px) {
+  .features__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    &:first-of-type {
+      order: 1;
+    }
+    &--city {
+      order: 2;
+    }
+    &--house {
+      order: 3;
+    }
+    &--gift {
+      order: 5;
+    }
+    &--burger {
+      order: 4;
+    }
+    &:nth-of-type(6) {
+      order: 7;
+    }
+    &--bridge {
+      order: 6;
+    }
+    &:nth-of-type(8) {
+      order: 8;
+    }
+    &:nth-of-type(9) {
+      order: 9;
+    }
+    &:nth-of-type(10) {
+      order: 10;
+    }
+  }
+  .features__item {
+    width: 33.33%;
+    height: 257px;
+    padding: 0;
+    outline: 1px solid red;
+    &--bg {
+      width: 66.67%;
+      background-size: contain;
+    }
+    &--city {
+      background: #fff url('../img/photo-city-tablet@1x.jpg') no-repeat center;
+    }
+    &--bridge {
+      background: #fff url('../img/photo-bridge-tablet@1x.jpg') no-repeat center;
+    }
+    &--icon-desc {
+      height: 327px;
+      padding: 0;
+    }
+  }
+  .features__item-title {
+    font: bold 2.1em/1.2380952381em $font-sans; //21/26
+    text-align: center;
+    text-transform: uppercase;
+    &--white {
+      padding: {
+        top: 45px;
+        left: 8%; //20px;
+        right: 8%; //20px;
       }
     }
-*/
+    &--icon {
+      margin-bottom: 22px;
+      padding-top: 155px;
+    }
+    &--grey {
+      padding: {
+        top: 40px;
+        left: 19%;
+        right: 19%;
+      }
+    }
+  }
+  .features__item-desc {
+    &--number {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &--white {
+      padding: 0 17%; //0 41px;
+    }
+    &--icon {
+      padding: 0 17.5%;
+      text-align: center;
+    }
+    &--burger {
+      padding: 0 19.5%;
+    }
+    &--grey {
+      padding: 0 19%;
+    }
+    &--road-desc {
+      padding: 0 24%;
+    }
+  }
+  .features__item-icon {
+    top: 17%;
+    left: 50%;
+    width: 33%;
+    height: 80px;
+    transform: translateX(-50%);
+  }
+}
