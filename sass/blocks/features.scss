@@ -71,6 +71,10 @@
   }
 }
 
+.features__text-hyphenation {
+  display: none;
+}
+
 .features__item-desc {
   font: 1.4em/1.5em $font-sans; //14/21
   color: $sedona-grey;
@@ -167,6 +171,11 @@
       padding: 0;
     }
   }
+
+  .features__text-hyphenation {
+    display: inline-block;
+  }
+
   .features__item-title {
     font: bold 2.1em/1.2380952381em $font-sans; //21/26
     text-align: center;

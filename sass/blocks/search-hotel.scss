@@ -20,6 +20,10 @@
   text-transform: uppercase;
 }
 
+.search-hotel__text-hyphenation {
+  display: none;
+}
+
 .search-hotel__desc {
   margin-bottom: 34px;
   padding: 0 7%; //0 23px
@@ -51,6 +55,11 @@
     font-size: 3em; //30px
     line-height: 0.8666666667em; //26
   }
+
+  .search-hotel__text-hyphenation {
+    display: inline-block;
+  }
+
   .search-hotel__desc {
     margin-bottom: 42px;
     padding: 0;

@@ -20,22 +20,18 @@
       <nav class="main-nav">
         <button class="main-nav__toggle-btn" type="button"></button>
         <ul class="main-nav__list">
-          <div class="main-nav__inner-wrapper">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item">
-              <a class="main-nav__link">Фото и видео</a>
-            </li>
-          </div>
-          <div class="main-nav__inner-wrapper">
-            <li class="main-nav__item">
-              <a href="sedona-form.html" class="main-nav__link">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/" class="main-nav__link">Html Academy</a>
-            </li>
-          </div>
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item">
+            <a class="main-nav__link">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--form">
+            <a href="sedona-form.html" class="main-nav__link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" class="main-nav__link">Html Academy</a>
+          </li>
           <li class="main-nav__item main-nav__item--logo main-nav__item--logo-not-index">
             <a href="index.html" class="main-nav__logo-link">
               <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="logo">
@@ -52,7 +48,7 @@
         <img class="intro__sedona-text-img" src="img/text-sedona.svg" width="460" height="80" alt="sedona-welcome-text">
       </div>
       <div class="intro__desc-block intro__desc-block--not-index intro__desc-block--media">
-        <h1 class="intro__title">Фото и видео</h1>
+        <h1 class="intro__title intro__title--big">Фото и видео</h1>
         <p class="intro__desc intro__desc--not-index">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
@@ -64,14 +60,14 @@
     <div class="media__wrapper wrapper-center">
       <div class="media__inner-wrapper">
         <div class="media__item media__item--main">
-          <img class="media__item-img" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="photo1">
+          <img class="media__item-img media__item-img--main" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="photo1">
           <div class="media__item-info">
             <div class="media__item-author-block media__item-author-block--main">
               <h2 class="media__item-title">Неродные просторы</h2>
               <span class="media__item-author-is-text">Автор фото:</span>
               <span class="media__item-author-name">Борис</span>
             </div>
-            <div class="media__item-likes">
+            <div class="media__item-likes media__item-likes--main">
               <a href="#" class="media__item-like-link"></a>
               <span class="media__item-likes-count">1350</span>
             </div>
@@ -127,7 +123,7 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>
-        <img class="media__item-img" src="img/video-mobile@1x.jpg" width="320" height="201" alt="video">
+        <img class="media__item-img media__item-img--video" src="img/video-mobile@1x.jpg" width="320" height="201" alt="video">
         <div class="media__video-overlay">
           <div class="media__video-scale">
             <div class="media__video-bar">

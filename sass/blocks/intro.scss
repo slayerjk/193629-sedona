@@ -12,7 +12,6 @@
 
   &--not-index {
     height: 157px;
-    ;
   }
 }
 
@@ -81,12 +80,9 @@
     line-height: 1.8571428571em; //26
   }
   &--not-index {
-    line-height: 1.7142857143em;//24
+    line-height: 1.7142857143em; //24
   }
 }
-
-
-
 
 //Mini BP
 @media only screen and (min-width: 325px) {
@@ -99,17 +95,27 @@
   }
 }
 
-
 //Tablet
 @media only screen and (min-width: 769px) {
   .intro__images-block {
     height: 519px;
     background: url("../img/bg-intro-triangle-desktop.png") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
     background-size: auto, cover;
+    &--not-index {
+      height: 291px;
+    }
   }
   .intro__welcome-text-img {
     top: 48.6%;
   }
+
+  .intro__sedona-text-img {
+    @include center-position;
+    top: 46.5%;
+    left: 50.5%;
+    max-width: 69.9%;
+  }
+
   .intro__desc-block {
     padding: {
       top: 37px;
@@ -117,10 +123,25 @@
       right: 118px;
       bottom: 48px;
     }
+    &--media {
+      padding: {
+        top: 55px;
+        bottom: 68px;
+      }
+    }
   }
   .intro__title {
-    font: bold 2.1em/1.2380952381em $font-sans;//21/26
+    font: bold 2.1em/1.2380952381em $font-sans; //21/26
     text-align: center;
     text-transform: uppercase;
+
+    &--big {
+      font-size: 3em; //30px
+      line-height: 0.8666666667em; //26
+    }
+  }
+
+  .intro__desc--not-index {
+    padding: 0 8%;
   }
 }

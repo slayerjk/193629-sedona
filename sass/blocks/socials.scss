@@ -8,7 +8,7 @@
 
 .socials__btn {
   display: inline-block;
-  width: 45px;//check
+  width: 45px; //check
   padding: {
     top: 29px;
     bottom: 8px;
@@ -30,7 +30,12 @@
 //Tablet version
 @media only screen and (min-width: 768px) {
   .socials {
-    width: 152px;
+    justify-content: flex-start;
+    width: 155px;
     padding-top: 36px;
+  }
+
+  .socials__btn {
+    margin-right: 5%;
   }
 }
