@@ -34,15 +34,20 @@
     top: 31px;
     left: 6.25%;
     right: 6.25%;
-    bottom: 14px;
+    bottom: 4px;
   }
   &--not-index {
     padding: {
       top: 26px;
-      left: 7.5%;
-      right: 7.5%;
-      bottom: 30px;
+      left: 7.1%;
+      right: 7.1%;
     }
+  }
+  &--media {
+    padding-bottom: 27px;
+  }
+  &--sedona-form {
+    padding-bottom: 18px;
   }
 }
 
@@ -76,7 +81,7 @@
     line-height: 1.8571428571em; //26
   }
   &--not-index {
-    //check line-height
+    line-height: 1.7142857143em;//24
   }
 }
 

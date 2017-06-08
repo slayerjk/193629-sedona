@@ -3,7 +3,6 @@
 .media__wrapper,
 .media__inner-wrapper {
   display: flex;
-  
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
@@ -14,12 +13,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   flex-basis: 100%;
   width: auto; //320
   padding: {
-    top: 20px;
-    bottom: 18px;
+    top: 21px;
+    bottom: 17px;
   }
   border-top: 1px solid #d6d6d6;
   &--main {
@@ -29,7 +28,7 @@
   }
   &--video {
     padding: {
-      top: 30px;
+      top: 32px;
     }
   }
 }
@@ -39,18 +38,27 @@
 }
 
 .media__item-author-block {
-  width: 100%;
   padding: {
     top: 15px;
-    left: 11%;
+    left: 6.25%;
   }
   outline: 1px solid red;
   &--main {
     padding: {
       top: 15px;
-      left: 13%;
     }
   }
+}
+
+.media__item-likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: {
+    top: 9px;
+    left: 6.25%;
+  }
+  outline: 1px solid red;
 }
 
 .media__item-title,
@@ -65,48 +73,35 @@
   text-align: left;
 }
 
-.media__title-video {
-  font: bold 2.1em/1.2380952381em $font-sans;//21/26
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .media__item-author-is-text,
 .media__item-author-name {
   font: 1.4em/1.7142857143em $font-sans;//14/24
   color: $sedona-grey;
   text-align: left;
-  text-transform: capitalize;
-}
-
-.media__item-likes {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: {
-    top: 9px;
-    left: 11%;
-  }
-  outline: 1px solid red;
-  &--main {
-    padding: {
-      top: 9px;
-      left: 13%;
-    }
-  }
+  text-transform: none;
 }
 
 .media__item-like-link {
   display: inline-block;
   width: 22px;
   height: 20px;
-  margin-right: 13px;
+  margin-right: 5%;//13px;
   background: #fff url('../img/icon-like.svg') no-repeat center;
   outline: 1px solid red;
 }
 
+.media__video-info {
+  padding: {
+    left: 7%;
+    right: 7%;
+  }
+}
+
 .media__title-video {
   margin-bottom: 28px;
+  font: bold 1.8em/1.4444444444em $font-sans;//18/26
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .media__item-video-desc {
