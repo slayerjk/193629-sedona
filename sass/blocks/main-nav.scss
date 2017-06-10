@@ -3,21 +3,23 @@
 }
 
 .main-nav__list {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .main-nav__toggle-btn {
+  display: none;
   position: absolute;
-  bottom: 6%;
+  top: 13px;
   right: 6%;
   width: 25px; //22.928px
   height: 27px; //21.982px
-  background: #fff url("../img/icon-menu.svg") no-repeat center;
+  background: $sedona-blue url("../img/icon-menu.svg") no-repeat center;
   border: none;
   cursor: pointer;
+  z-index: 1;
+  outline: 1px solid red;
 }
 
 .main-nav__link {
@@ -62,10 +64,8 @@
     align-items: flex-start;
     width: 100%;
   }
-  .main-nav__toggle-btn {
-    display: none;
-  }
-  .main-nav__item:not(.main-nav__item--logo) {
+
+  .main-nav__item {
     width: 20%;
     outline: 1px solid red;
   }
@@ -88,8 +88,17 @@
   }
   .main-nav__item--logo {
     position: absolute;
+    width: auto;
     top: 0;
-    left: 50%;
-    transform: translate(-48%, 0);
+    left: 43.5%;
+    transform: translate(-43.5%, 0);
+  }
+}
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .main-nav__item--logo {
+    left: 550px;
+    transform: translate(-550%, 0);
   }
 }

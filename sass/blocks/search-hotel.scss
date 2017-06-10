@@ -72,3 +72,18 @@
     }
   }
 }
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .search-hotel__wrapper {
+    width: 460px;
+    padding: {
+      top: 52px;
+      bottom: 64px;
+    }
+  }
+  .search-hotel__desc {
+    margin-bottom: 46px;
+    padding: 0;
+  }
+}

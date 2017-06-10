@@ -1,7 +1,3 @@
-.sedona-form {
-  outline: 1px solid red;
-}
-
 .sedona-form__wrapper {
   padding: {
     top: 0px;
@@ -70,7 +66,6 @@
   right: 0%;
   width: 55px;
   height: 53px;
-  outline: 1px solid red;
   &--tel {
     background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center;
   }
@@ -95,7 +90,6 @@
   }
   background-color: #f2f2f2;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .sedona-form__label {
@@ -104,7 +98,6 @@
   color: $sedona-grey;
   text-transform: uppercase;
   text-align: left;
-  outline: 1px solid red;
   &--contacts {
     margin-bottom: 9px;
     padding-left: 7.5%;
@@ -151,7 +144,6 @@
   height: 55px;
   background-color: #f2f2f2;
   border-radius: 50%;
-  outline: 1px solid red;
 }
 
 .sedona-form__input--radio[id="pro"]:checked+.sedona-form__label--radio[for="pro"]::after,
@@ -217,7 +209,6 @@
   }
   background-color: #f2f2f2;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .sedona-form__section--submit {
@@ -242,6 +233,11 @@
 
 //Tablet version
 @media only screen and (min-width: 768px) {
+  .sedona-form__wrapper {
+    padding: {
+      bottom: 62px;
+    }
+  }
   .sedona-form__sections {
     flex-direction: row;
     justify-content: space-between;
@@ -259,7 +255,6 @@
       top: 8px;
     }
     border: none;
-    outline: 1px solid red;
     &--small {
       width: auto;
     }
@@ -396,23 +391,168 @@
     height: 16px;
     background: transparent url("../img/icon-tick.svg") no-repeat center;
   }
+  .sedona-form__section--emotions {
+    margin-bottom: 60px;
+  }
+  .sedona-form__title--emotions {
+    margin-bottom: 59px;
+  }
+  .sedona-form__describe-emotions {
+    height: 155px;
+    padding: 14px 3%;
+  }
+  .sedona-form__section--submit {
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  .sedona-form__submit {
+    width: 50%;
+  }
+  .sedona-form__require-text {
+    width: 50%;
+    display: block;
+    padding-top: 18px;
+    text-align: right;
+  }
 }
 
-
-/*
 //Desktop version
 @media only screen and (min-width: 1200px) {
   .sedona-form__wrapper {
     padding: {
-      left: 10%; //120
-      left: 10%; //120
+      bottom: 0px;
     }
   }
 
-  .sedona-form__section {
-    &--small {
-      width: 400px;
+  .sedona-form__sections {
+    padding: {
+      left: 120px; //60
+      right: 120px; //60
     }
   }
+  .sedona-form__section {
+    margin-bottom: 63px;
+  }
+  .sedona-form__title--empression {
+    padding-left: 80px;
+  }
+  .sedona-form__label--radio {
+    padding-left: 80px;
+  }
+  .sedona-form__label--radio::before {
+    left: 5px;
+  }
+  .sedona-form__input--radio[id="pro"]:checked+.sedona-form__label--radio[for="pro"]::after,
+  .sedona-form__input--radio[id="contra"]:checked+.sedona-form__label--radio[for="contra"]::after,
+  .sedona-form__input--radio[id="na"]:checked+.sedona-form__label--radio[for="na"]::after {
+    top: 5px;
+    left: 21px;
+  }
+  .sedona-form__section--introduce {
+    width: 400px;
+    &::before {
+      @include pseudo;
+      top: 12px;
+      left: -80px;
+      width: 1px;
+      height: 292px;
+      background-color: #dbdbdb;
+    }
+  }
+  .sedona-form__title--introduce {
+    margin-bottom: 60px;
+  }
+  .sedona-form__input {
+    padding-left: 21px;
+  }
+  .sedona-form__section--contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  .sedona-form__title--decor {
+    flex-basis: 100%;
+    &::after,
+    &::before {
+      width: 278px;
+    }
+  }
+
+  .sedona-form__title--contacts {
+    margin-bottom: 75px;
+  }
+
+  .sedona-form__text-to-disable {
+    display: none;
+  }
+  .sedona-form__block--contacts {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sedona-form__input--contacts {
+    width: 318px;
+  }
+  .sedona-form__label--contacts {
+    width: auto;
+    padding-left: 0;
+    padding-top: 18px;
+  }
+  .sedona-form__cotacts-icon {
+    top: 0;
+    right: 0;
+  }
+
+  .sedona-form__section--sites {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 68px;
+    padding: {
+      right: 0;
+    }
+  }
+  .sedona-form__block--sites {
+    width: auto;
+    margin : 0;
+    &:first-of-type {
+      margin-right: 150px;
+      padding-left: 80px;
+    }
+    &:nth-of-type(2) {
+      margin-right: 150px;
+      padding-left: 0;
+    }
+    &:nth-of-type(3) {
+      margin-right: 152px;
+      padding-right: 0;
+    }
+    &:nth-of-type(4) {
+      padding-right: 0;
+    }
+  }
+
+  .sedona-form__label--checkbox {
+    width: auto;
+    margin-right: 0;
+  }
+  .sedona-form__label--checkbox::before {
+    left: -79px;
+  }
+  .sedona-form__input--checkbox[id="devil-bridge"]:checked+.sedona-form__label--checkbox[for="devil-bridge"]::after,
+  .sedona-form__input--checkbox[id="slide-park"]:checked+.sedona-form__label--checkbox[for="slide-park"]::after,
+  .sedona-form__input--checkbox[id="bell-mount"]:checked+.sedona-form__label--checkbox[for="bell-mount"]::after,
+  .sedona-form__input--checkbox[id="red-rocks"]:checked+.sedona-form__label--checkbox[for="red-rocks"]::after {
+    left: -63px;
+  }
+
+  .sedona-form__describe-emotions {
+    padding-left: 20px;
+  }
 }
-*/

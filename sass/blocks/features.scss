@@ -94,6 +94,10 @@
   }
 }
 
+.feature__gift-desc-text-transfer {
+  display: none;
+}
+
 .features__item-title--icon,
 .features__item-desc--icon {
   text-align: left;
@@ -171,11 +175,9 @@
       padding: 0;
     }
   }
-
   .features__text-transfer {
     display: inline-block;
   }
-
   .features__item-title {
     font: bold 2.1em/1.2380952381em $font-sans; //21/26
     text-align: center;
@@ -227,5 +229,62 @@
     width: 33%;
     height: 80px;
     transform: translateX(-50%);
+  }
+}
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .features__item {
+    &--bg {
+      min-height: 258px;
+      padding: 0;
+    }
+    &--city {
+      background: #fff url('../img/photo-city-desktop@1x.jpg') no-repeat center;
+    }
+    &--bridge {
+      background: #fff url('../img/photo-bridge-desktop@1x.jpg') no-repeat center;
+    }
+  }
+  .features__item-title {
+    &--white {
+      margin-bottom: 13px;
+      padding: {
+        top: 50px;
+        left: 100px; //20px;
+        right: 100px; //20px;
+      }
+    }
+    &--grey {
+      padding: {
+        top: 45px;
+        left: 120px;
+        right: 120px;
+      }
+    }
+  }
+  .features__item-desc {
+    &--number {
+      //margin: 0;
+      //margin-bottom: 20px;
+    }
+    &--white {
+      //padding: 0 17%; //0 41px;
+    }
+    &--icon {
+      padding: 0 50px;
+    }
+    &--bridge {
+      padding: 0 90px;
+    }
+    &--grey {
+      padding: 0 40px;
+    }
+    &--road-desc {
+      padding: 0 70px;
+    }
+  }
+  .feature__gift-desc-text-transfer {
+    display: inline-block;
   }
 }
