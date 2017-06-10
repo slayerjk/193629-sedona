@@ -59,22 +59,20 @@
 @media only screen and (min-width: 768px) {
   .page-footer__inner-wrapper {
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
     padding: 0;
     padding: {
-      top: 0px;
+      top: 35px;
       bottom: 20px;
       left: 8%;
       right: 7.8%;
     }
     &--media {
-      padding: {
-        top: 40px;
-      }
+      padding-top: 11px;
     }
   }
   .page-footer__hashtag {
-    padding-top: 44px;
+    padding-top: 10px;//44px;
   }
   .page-footer__made-by {
     width: 130px;

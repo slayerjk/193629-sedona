@@ -286,8 +286,13 @@
   }
 
   .media__video-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 84.38%;
-    bottom: -8.8%;
+    margin: auto;
+    margin-top: -94px;
+    transform: none;
   }
   .media__video-scale {
     position: relative;
@@ -306,7 +311,7 @@
     height: 10px;
   }
   .media__video-controls {
-    width: auto;
+    width: 100%;
     padding: 0;
     background-color: transparent;
   }

@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 150px;
-  outline: 1px solid red;
 }
 
 .socials__btn {
@@ -32,10 +31,13 @@
   .socials {
     justify-content: flex-start;
     width: 155px;
-    padding-top: 36px;
+    padding-top: 0;//36px;
   }
 
   .socials__btn {
     margin-right: 5%;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
