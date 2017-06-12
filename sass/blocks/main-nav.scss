@@ -92,17 +92,9 @@
   }
   .main-nav__item--logo {
     position: absolute;
-    width: auto;
+    width: 102px;
     top: 0;
-    left: 43.5%;
-    transform: translate(-43.5%, 0);
-  }
-}
-
-//Desktop version
-@media only screen and (min-width: 1200px) {
-  .main-nav__item--logo {
-    left: 550px;
-    transform: translate(-550%, 0);
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
