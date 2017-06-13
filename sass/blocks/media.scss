@@ -207,10 +207,13 @@
     }
   }
   .media__item-img {
-    //check
+    width: 100%;
     height: 265px;
     &--main {
       height: 401px;
+    }
+    &--video {
+      width: 85%;
     }
   }
   .media__item-info {
@@ -345,6 +348,7 @@
       height: 400px;
     }
     &--video {
+      width: auto;
       height: 500px;
     }
   }

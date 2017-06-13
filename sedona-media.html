@@ -11,6 +11,8 @@
   <title>HTML Academy : Sedona (media)</title>
 
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon_32x32.ico">
+  <link rel="icon" href="img/favicon_32x32.ico">
 </head>
 
 <body>
@@ -37,7 +39,11 @@
           </ul>
           <div class="main-nav__item main-nav__item--logo main-nav__item--logo-not-index">
             <a href="index.html" class="main-nav__logo-link">
-              <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="logo">
+              </picture>
             </a>
           </div>
         </nav>
@@ -62,7 +68,11 @@
       <div class="media__wrapper wrapper-center">
         <div class="media__inner-wrapper">
           <div class="media__item media__item--main">
-            <img class="media__item-img media__item-img--main" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="photo1">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="media__item-img media__item-img--main" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="photo1">
+            </picture>
             <div class="media__item-info">
               <div class="media__item-author-block media__item-author-block--main">
                 <h2 class="media__item-title">Неродные просторы</h2>
@@ -76,7 +86,11 @@
             </div>
           </div>
           <div class="media__item">
-            <img class="media__item-img" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="photo2">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="media__item-img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo2">
+            </picture>
             <div class="media__item-info">
               <div class="media__item-author-block">
                 <h2 class="media__item-title">Местная растительность</h2>
@@ -90,7 +104,11 @@
             </div>
           </div>
           <div class="media__item">
-            <img class="media__item-img" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="photo3">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="media__item-img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo3">
+            </picture>
             <div class="media__item-info">
               <div class="media__item-author-block">
                 <h2 class="media__item-title">Дорога на север</h2>
@@ -104,7 +122,11 @@
             </div>
           </div>
           <div class="media__item">
-            <img class="media__item-img" src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="photo4">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="media__item-img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo4">
+            </picture>
             <div class="media__item-info">
               <div class="media__item-author-block">
                 <h2 class="media__item-title">Мост дьявола</h2>
@@ -125,7 +147,11 @@
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </p>
           </div>
-          <img class="media__item-img media__item-img--video" src="img/video-mobile@1x.jpg" width="320" height="201" alt="video">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-mobile@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="media__item-img media__item-img--video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video-img">
+          </picture>
           <div class="media__video-overlay">
             <div class="media__video-scale">
               <div class="media__video-bar">

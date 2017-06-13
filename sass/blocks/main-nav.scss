@@ -98,3 +98,17 @@
     transform: translate(-50%, 0);
   }
 }
+
+
+//Desktop
+@media #{$desktop} {
+  .main-nav__item--logo {
+    width: 187px;
+  }
+
+  .main-nav__logo-link,
+  .main-nav__logo-img {
+    width: 187px;
+    min-height: 97px;
+  }
+}
