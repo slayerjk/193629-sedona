@@ -1,6 +1,8 @@
 .btn {
-  @include font-title-big;
+  font: bold 2.1em/1.2380952381em $font-sans;//21/26
   color: #fff;
+  text-align: center;
+  text-transform: uppercase;
   background-color: $sedona-blue;
   cursor: pointer;
 }

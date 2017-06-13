@@ -1,14 +1,17 @@
 .socials {
-  width: 67px;//check
-  height: 20px;//check
-  outline: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150px;
 }
 
 .socials__btn {
   display: inline-block;
-  width: 20px;//check
-  height: 20px;//check
-  vertical-align: top;
+  width: 45px; //check
+  padding: {
+    top: 29px;
+    bottom: 8px;
+  }
   text-indent: -10000px;
   outline: 1px solid red;
 
@@ -20,5 +23,21 @@
   }
   &--youtube {
     background: $sedona-blue url('../img/icon-youtube.svg') no-repeat center;
+  }
+}
+
+//Tablet version
+@media only screen and (min-width: 768px) {
+  .socials {
+    justify-content: flex-start;
+    width: 155px;
+    padding-top: 0;//36px;
+  }
+
+  .socials__btn {
+    margin-right: 5%;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

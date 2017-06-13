@@ -16,36 +16,6 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin font-title() {
-  font: 1.8em/1.4444444444em $font-sans;//18/26
-  font-weight: bold;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@mixin font-title-big() {
-  font: 2.1em/1.2380952381em $font-sans;//21/26
-  font-weight: bold;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@mixin font-desc() {
-  font: 1.4em/1.5em $font-sans;//14/21
-  color: $sedona-grey;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@mixin font-desc-big() {
-  font: 1.4em/1.7142857143em $font-sans;//14/24
-  color: $sedona-grey;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 @mixin placeholder {
   &::-webkit-input-placeholder { @content; }
   &:-moz-placeholder           { @content; }

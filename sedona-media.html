@@ -15,143 +15,156 @@
 
 <body>
 
-  <header class="page-header">
-    <div class="page-header__wrapper wrapper-center">
-      <nav class="main-nav">
-        <button class="main-nav__toggle-btn"></button>
-        <ul class="main-nav__list">
-          <div class="main-nav__inner-wrapper">
+  <div class="body-wrapper">
+
+    <header class="page-header">
+      <div class="page-header__wrapper wrapper-center">
+        <nav class="main-nav">
+          <button class="main-nav__toggle-btn" type="button"></button>
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item">
               <a class="main-nav__link">Фото и видео</a>
             </li>
-          </div>
-          <div class="main-nav__inner-wrapper">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--form">
               <a href="sedona-form.html" class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a href="https://htmlacademy.ru/" class="main-nav__link">Html Academy</a>
             </li>
-          </div>
-          <li class="main-nav__item main-nav__item--logo">
+          </ul>
+          <div class="main-nav__item main-nav__item--logo main-nav__item--logo-not-index">
             <a href="index.html" class="main-nav__logo-link">
               <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="logo">
             </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-  <section class="intro">
-    <div class="intro__wrapper wrapper-center">
-      <div class="intro__images-block">
-        <img class="intro__welcome-text-img" src="img/text-sedona-index.svg" width="460px" height="351px" alt="sedona-welcome-text">
-        <div class="intro__images-block-decor"></div>
-      </div>
-      <div class="intro__desc-block">
-        <h1 class="intro__title">Фото и видео</h1>
-        <p class="intro__desc">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="media">
-    <div class="media__wrapper wrapper-center">
-      <div class="media__inner-wrapper">
-        <div class="media__item media__item--title-img">
-          <img class="media__item-img" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="photo1">
-          <div class="media__item-info">
-            <h2 class="media__item-title">Неродные просторы</h2>
-            <div class="media__item-author-block">
-              <span class="media__item-author-is-text">Автор фото:</span>
-              <span class="media__item-author-name">Борис</span>
-            </div>
-            <div class="media__item-likes">
-              <a href="#" class="media__item-like-link"></a>
-              <span class="media__item-likes-count">1350</span>
-            </div>
-          </div>
+    <section class="intro">
+      <div class="intro__wrapper wrapper-center">
+        <div class="intro__images-block intro__images-block--not-index">
+          <img class="intro__sedona-text-img" src="img/text-sedona.svg" width="460" height="80" alt="sedona-welcome-text">
         </div>
-        <div class="media__item">
-          <img class="media__item-img" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="photo2">
-          <div class="media__item-info">
-            <h2 class="media__item-title">Местная растительность</h2>
-            <div class="media__item-author-block">
-              <span class="media__item-author-is-text">Автор фото:</span>
-              <span class="media__item-author-name">Сергей</span>
-            </div>
-            <div class="media__item-likes">
-              <a href="#" class="media__item-like-link"></a>
-              <span class="media__item-likes-count">143</span>
-            </div>
-          </div>
-        </div>
-        <div class="media__item">
-          <img class="media__item-img" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="photo3">
-          <div class="media__item-info">
-            <h2 class="media__item-title">Дорога на север</h2>
-            <div class="media__item-author-block">
-              <span class="media__item-author-is-text">Автор фото:</span>
-              <span class="media__item-author-name">Петр</span>
-            </div>
-            <div class="media__item-likes">
-              <a href="#" class="media__item-like-link"></a>
-              <span class="media__item-likes-count">96</span>
-            </div>
-          </div>
-        </div>
-        <div class="media__item">
-          <img class="media__item-img" src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="photo4">
-          <div class="media__item-info">
-            <h2 class="media__item-title">Мост дьявола</h2>
-            <div class="media__item-author-block">
-              <span class="media__item-author-is-text">Автор фото:</span>
-              <span class="media__item-author-name">Антон</span>
-            </div>
-            <div class="media__item-likes">
-              <a href="#" class="media__item-like-link"></a>
-              <span class="media__item-likes-count">254</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="media__item media__item--video">
-        <div class="media__item-info">
-          <h2 class="media__item-title media__item-title--big">Все еще сомневаетесь?</h2>
-          <p class="media__item-video-desc">
-            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        <div class="intro__desc-block intro__desc-block--not-index intro__desc-block--media">
+          <h1 class="intro__title intro__title--big">Фото и видео</h1>
+          <p class="intro__desc intro__desc--not-index">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>
-        <img class="media__item-img" src="img/video-mobile@1x.jpg" width="320" height="201" alt="video">
-        <!--while no video-source-->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper-center">
-      <div class="page-footer__inner-wrapper page-footer__inner-wrapper--index">
-        <div class="page-footer__wrapper-block page-footer__twitter-tag">
-          <a class="page-footer__hashtag" href="#">#visitsedona</a>
+    <section class="media">
+      <div class="media__wrapper wrapper-center">
+        <div class="media__inner-wrapper">
+          <div class="media__item media__item--main">
+            <img class="media__item-img media__item-img--main" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="photo1">
+            <div class="media__item-info">
+              <div class="media__item-author-block media__item-author-block--main">
+                <h2 class="media__item-title">Неродные просторы</h2>
+                <span class="media__item-author-is-text">Автор фото:</span>
+                <span class="media__item-author-name">Борис</span>
+              </div>
+              <div class="media__item-likes media__item-likes--main">
+                <a href="#" class="media__item-like-link"></a>
+                <span class="media__item-likes-count">1350</span>
+              </div>
+            </div>
+          </div>
+          <div class="media__item">
+            <img class="media__item-img" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="photo2">
+            <div class="media__item-info">
+              <div class="media__item-author-block">
+                <h2 class="media__item-title">Местная растительность</h2>
+                <span class="media__item-author-is-text">Автор фото:</span>
+                <span class="media__item-author-name">Сергей</span>
+              </div>
+              <div class="media__item-likes">
+                <a href="#" class="media__item-like-link"></a>
+                <span class="media__item-likes-count">143</span>
+              </div>
+            </div>
+          </div>
+          <div class="media__item">
+            <img class="media__item-img" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="photo3">
+            <div class="media__item-info">
+              <div class="media__item-author-block">
+                <h2 class="media__item-title">Дорога на север</h2>
+                <span class="media__item-author-is-text">Автор фото:</span>
+                <span class="media__item-author-name">Петр</span>
+              </div>
+              <div class="media__item-likes">
+                <a href="#" class="media__item-like-link"></a>
+                <span class="media__item-likes-count">96</span>
+              </div>
+            </div>
+          </div>
+          <div class="media__item">
+            <img class="media__item-img" src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="photo4">
+            <div class="media__item-info">
+              <div class="media__item-author-block">
+                <h2 class="media__item-title">Мост дьявола</h2>
+                <span class="media__item-author-is-text">Автор фото:</span>
+                <span class="media__item-author-name">Антон</span>
+              </div>
+              <div class="media__item-likes">
+                <a href="#" class="media__item-like-link"></a>
+                <span class="media__item-likes-count">254</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="socials">
-          <a class="socials__btn socials__btn--twitter" href="#">twitter</a>
-          <a class="socials__btn socials__btn--facebook" href="#">facebook</a>
-          <a class="socials__btn socials__btn--youtube" href="#">youtube</a>
-        </div>
-        <div class="page-footer__wrapper-block page-footer__made-by">
-          <span class="page-footer__desc">Разработано</span>
-          <a class="page-footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru"></a>
+        <div class="media__item media__item--video">
+          <div class="media__video-info">
+            <h2 class="media__title-video">Все еще сомневаетесь?</h2>
+            <p class="media__item-video-desc">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+          </div>
+          <img class="media__item-img media__item-img--video" src="img/video-mobile@1x.jpg" width="320" height="201" alt="video">
+          <div class="media__video-overlay">
+            <div class="media__video-scale">
+              <div class="media__video-bar">
+                <div class="media__video-bar-switch"></div>
+              </div>
+            </div>
+            <div class="media__video-controls">
+              <button class="media__video-control media__video-control--replay" type="button"></button>
+              <button class="media__video-control media__video-control--subtitles" type="button"></button>
+              <button class="media__video-control media__video-control--fullscreen" type="button"></button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper wrapper-center">
+        <div class="page-footer__inner-wrapper page-footer__inner-wrapper--media">
+          <div class="page-footer__wrapper-block page-footer__twitter-tag">
+            <a class="page-footer__hashtag" href="#">#visitsedona</a>
+          </div>
+          <div class="socials">
+            <a class="socials__btn socials__btn--twitter" href="#">twitter</a>
+            <a class="socials__btn socials__btn--facebook" href="#">facebook</a>
+            <a class="socials__btn socials__btn--youtube" href="#">youtube</a>
+          </div>
+          <div class="page-footer__wrapper-block page-footer__made-by">
+            <span class="page-footer__desc">Разработано</span>
+            <a class="page-footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui-1.12.1.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

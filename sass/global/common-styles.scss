@@ -1,25 +1,31 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
   display: block;
   text-decoration: none;
-  color: #000000; }
+  color: #000000;
+}
 
 body {
   min-width: 320px;
-  font-size: 0.625em; }
+  font-size: 0.625em;
+}
 
+audio,
 img,
+svg,
 video,
-audio {
+{
   display: block;
   max-width: 100%;
   height: auto
 }
 
-input {
+input,
+button {
   border: none;
   outline: none;
 }
@@ -29,4 +35,5 @@ input[type="submit"] {
 }
 
 ul {
-  list-style: none; }
+  list-style: none;
+}

@@ -3,81 +3,96 @@
 }
 
 .main-nav__list {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  outline: 1px solid red;
 }
 
 .main-nav__toggle-btn {
+  display: none;
   position: absolute;
-  bottom: 15px;
-  right: 0;
-  width: 25px;//22.928px
-  height: 27px;//21.982px
-  background: #fff url("../img/icon-menu.svg") no-repeat center;
+  top: 13px;
+  right: 6%;
+  width: 25px; //22.928px
+  height: 27px; //21.982px
+  background: $sedona-blue url("../img/icon-menu.svg") no-repeat center;
+  border: none;
   cursor: pointer;
+  z-index: 1;
+  outline: 1px solid red;
+}
+
+.main-nav__toggle-btn--js-active {
+  background-image: url("../img/icon-cross.svg");
 }
 
 .main-nav__link {
   width: auto;
   padding: {
-    top: 15px;
-    bottom: 18px;
+    top: 8px;
+    bottom: 7px;
   }
-  font: 1.8em/2.2222222222em $font-sans; //18/40
-  font-weight: bold;
+  font: bold 1.8em/2.2222222222em $font-sans; //18/40
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   background-color: $sedona-blue;
-  outline: 1px solid red;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
 }
 
 .main-nav__item--logo {
   position: relative;
-  width: 102px;//101.668px
-  min-height: 60px;//check-temp
+  width: 102px; //101.668px
+  min-height: 59px;
   margin: 0 auto;
   z-index: 1;
   outline: 1px solid green;
 }
 
+.main-nav__item--logo-not-index {
+  min-height: 56px;
+}
+
 .main-nav__logo-link {
   position: absolute;
-  width: 102px;//101.668px
-  min-height: 84px;//83.984px
+  width: 102px; //101.668px
+  min-height: 84px; //83.984px
 }
 
 //Tablet version
 @media only screen and (min-width: 768px) {
   .main-nav__list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
   }
 
-  .main-nav__inner-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 40%;
-    outline: 5px solid green;
+  .main-nav__item {
+    width: 20%;
+    outline: 1px solid red;
   }
-
-  .main-nav__toggle-btn {
-    display: none;
+  .main-nav__item--form {
+    margin-right: 0;
+    margin-left: auto;
+    background: red;
   }
-
   .main-nav__link {
-    width: auto;
+    padding: {
+      top: 15px;
+      bottom: 15px;
+    }
+    font: bold 1.4em/1.8571428571em $font-sans; //14/26
+    text-align: center;
+    text-transform: uppercase;
     color: #000;
     background-color: #fff;
+    border: none;
   }
-
   .main-nav__item--logo {
     position: absolute;
+    width: 102px;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);

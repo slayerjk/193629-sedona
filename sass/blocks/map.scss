@@ -3,9 +3,34 @@
 }
 
 .map__google-link {
+  position: relative;
   display: block;
   max-width: 100%;
   height: 350px;
   background: #fff url('../img/bg-map-mobile@1x.jpg') no-repeat center;
   outline: 1px solid red;
+  &::after {
+    content: "";
+    @include center-position;
+    width: 27px;
+    height: 27px;
+    background: transparent url("../img/icon-map-marker.svg") no-repeat center;
+    outline: 1px solid red;
+  }
+}
+
+//Tablet version
+@media only screen and (min-width: 768px) {
+  .map__google-link {
+    max-width: 100%;
+    background: #fff url('../img/bg-map-tablet@1x.jpg') no-repeat center;
+    outline: 1px solid red;
+  }
+}
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .map__google-link {
+    background: #fff url('../img/bg-map-desktop@1x.jpg') no-repeat center;
+  }
 }
