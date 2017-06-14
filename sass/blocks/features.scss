@@ -137,7 +137,7 @@
   }
   .features__item {
     width: 33.33%;
-    height: 257px;
+    height: 260px;
     padding: 0;
     &:first-of-type {
       order: 1;
@@ -189,11 +189,11 @@
     .features__item {
       &--city {
         background: #fff url('../img/photo-city-tablet@2x.jpg') no-repeat center;
-        background-size: 512px auto;
+        background-size: cover;
       }
       &--bridge {
         background: #fff url('../img/photo-bridge-tablet@2x.jpg') no-repeat center;
-        background-size: 512px auto;
+        background-size: cover;
       }
     }
   }
