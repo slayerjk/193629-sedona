@@ -19,7 +19,6 @@
   border: none;
   cursor: pointer;
   z-index: 1;
-  outline: 1px solid red;
 }
 
 .main-nav__toggle-btn--js-active {
@@ -47,7 +46,6 @@
   min-height: 59px;
   margin: 0 auto;
   z-index: 1;
-  outline: 1px solid green;
 }
 
 .main-nav__item--logo-not-index {
@@ -71,12 +69,10 @@
 
   .main-nav__item {
     width: 20%;
-    outline: 1px solid red;
   }
   .main-nav__item--form {
     margin-right: 0;
     margin-left: auto;
-    background: red;
   }
   .main-nav__link {
     padding: {

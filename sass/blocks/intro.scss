@@ -5,7 +5,7 @@
 .intro__images-block {
   position: relative;
   height: 384px;
-  background: url("../../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-mobile@1x.jpg') no-repeat center;
   background-size: contain, cover;
   &--not-index {
     height: 157px;
@@ -57,7 +57,6 @@
   background-size: cover;
   transform: translateX(-50%);
   z-index: 1;
-  outline: 1px solid blue;
 }
 
 .intro__title {
@@ -85,8 +84,8 @@
 @media only screen and (min-width: 320px) {
   @media #{$retina} {
     .intro__images-block {
-      background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../../img/bg-back-tablet@2x.jpg') no-repeat center;
-      background-size: contain, cover;
+      background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 100%, url('../img/bg-back-tablet@2x.jpg') no-repeat center;
+      background-size: cover;
     }
   }
 }
@@ -102,7 +101,7 @@
 @media only screen and (min-width: 768px) {
   .intro__images-block {
     height: 519px;
-    background: url("../im/bg-intro-triangle-tablet.svg") no-repeat center 100%, url('../img/bg-back-tablet@1x.jpg') no-repeat center;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center 100%, url('../img/bg-back-tablet@1x.jpg') no-repeat center;
     background-size: contain, cover;
     &--not-index {
       height: 291px;
@@ -111,7 +110,7 @@
   @media #{$retina} {
     .intro__images-block {
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center 100%, url('../img/bg-back-tablet@2x.jpg') no-repeat center;
-      background-size: contain, cover;
+      background-size: 768px auto;
     }
   }
   .intro__welcome-text-img {
@@ -164,7 +163,7 @@
   @media #{$retina} {
     .intro__images-block {
       background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center 100%, url('../img/bg-back-desktop@2x.jpg') no-repeat center;
-      background-size: contain, cover;
+      background-size: 1200px auto, 2400px;
     }
   }
 
@@ -184,6 +183,9 @@
         top: 92px;
         bottom: 72px;
       }
+    }
+    &--media {
+      padding-bottom: 71px;
     }
     &--sedona-form {
       padding: {
