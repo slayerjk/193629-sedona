@@ -139,6 +139,7 @@
     width: 33.33%;
     height: 260px;
     padding: 0;
+    border: none;
     &:first-of-type {
       order: 1;
     }
@@ -246,9 +247,9 @@
     }
   }
   .features__item-icon {
-    top: 17%;
+    top: 16%;
     left: 50%;
-    width: 33%;
+    width: 19%;
     height: 80px;
     transform: translateX(-50%);
   }
@@ -257,8 +258,12 @@
 //Desktop version
 @media only screen and (min-width: 1200px) {
   .features__item {
+    &--blue {
+      align-self: center;
+      height: 256px;
+    }
     &--bg {
-      min-height: 258px;
+      height: 256px;
       padding: 0;
     }
     &--city {
@@ -266,6 +271,9 @@
     }
     &--bridge {
       background: #fff url('../img/photo-bridge-desktop@1x.jpg') no-repeat center;
+    }
+    &--grey {
+      height: 253px;
     }
   }
 
@@ -287,13 +295,6 @@
     }
   }
   .features__item-desc {
-    &--number {
-      //margin: 0;
-      //margin-bottom: 20px;
-    }
-    &--white {
-      //padding: 0 17%; //0 41px;
-    }
     &--icon {
       padding: 0 50px;
     }

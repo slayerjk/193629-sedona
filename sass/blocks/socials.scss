@@ -13,6 +13,7 @@
     bottom: 8px;
   }
   text-indent: -10000px;
+  //background-color:$sedona-blue;
   &--twitter {
     background: $sedona-blue url('../img/icon-twitter.svg') no-repeat center;
   }
@@ -21,6 +22,12 @@
   }
   &--youtube {
     background: $sedona-blue url('../img/icon-youtube.svg') no-repeat center;
+  }
+  &:hover {
+    background-color: $sedona-blue-hover;
+  }
+  &:active {
+    background-color: $sedona-blue-active;
   }
 }
 
