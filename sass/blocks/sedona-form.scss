@@ -90,6 +90,17 @@
   }
   background-color: #f2f2f2;
   box-sizing: border-box;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+    background-color: #fff;
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .sedona-form__label {
@@ -146,9 +157,9 @@
   border-radius: 50%;
 }
 
-.sedona-form__input--radio[id="pro"]:checked+.sedona-form__label--radio[for="pro"]::after,
-.sedona-form__input--radio[id="contra"]:checked+.sedona-form__label--radio[for="contra"]::after,
-.sedona-form__input--radio[id="na"]:checked+.sedona-form__label--radio[for="na"]::after {
+.sedona-form__input--radio[id="pro"]:checked + .sedona-form__label--radio[for="pro"]::after,
+.sedona-form__input--radio[id="contra"]:checked + .sedona-form__label--radio[for="contra"]::after,
+.sedona-form__input--radio[id="na"]:checked + .sedona-form__label--radio[for="na"]::after {
   @include pseudo;
   top: 20%;
   left: 7%;
@@ -172,16 +183,31 @@
   border-radius: 5px;
 }
 
-.sedona-form__input--checkbox[id="devil-bridge"]:checked+.sedona-form__label--checkbox[for="devil-bridge"]::after,
-.sedona-form__input--checkbox[id="slide-park"]:checked+.sedona-form__label--checkbox[for="slide-park"]::after,
-.sedona-form__input--checkbox[id="bell-mount"]:checked+.sedona-form__label--checkbox[for="bell-mount"]::after,
-.sedona-form__input--checkbox[id="red-rocks"]:checked+.sedona-form__label--checkbox[for="red-rocks"]::after {
+.sedona-form__input--checkbox[id="devil-bridge"]:checked + .sedona-form__label--checkbox[for="devil-bridge"]::after,
+.sedona-form__input--checkbox[id="slide-park"]:checked + .sedona-form__label--checkbox[for="slide-park"]::after,
+.sedona-form__input--checkbox[id="bell-mount"]:checked + .sedona-form__label--checkbox[for="bell-mount"]::after,
+.sedona-form__input--checkbox[id="red-rocks"]:checked + .sedona-form__label--checkbox[for="red-rocks"]::after {
   @include pseudo;
   top: 17%;
   left: 6%;
   width: 23px;
   height: 16px;
   background: transparent url("../img/icon-tick.svg") no-repeat center;
+}
+
+.sedona-form__label--radio:hover::before,
+.sedona-form__label--checkbox:hover::before {
+  background-color: #e5e5e5;
+}
+
+.sedona-form__label--radio:active::before,
+.sedona-form__label--checkbox:active::before {
+  background-color: #d5d5d5;
+}
+
+.sedona-form__label--radio:active::after,
+.sedona-form__label--checkbox:active::after {
+  opacity: 0.3;
 }
 
 .sedona-form__title--emotions {
@@ -209,6 +235,19 @@
   }
   background-color: #f2f2f2;
   box-sizing: border-box;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+    background-color: #fff;
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .sedona-form__section--submit {
@@ -550,6 +589,10 @@
   .sedona-form__input--checkbox[id="bell-mount"]:checked+.sedona-form__label--checkbox[for="bell-mount"]::after,
   .sedona-form__input--checkbox[id="red-rocks"]:checked+.sedona-form__label--checkbox[for="red-rocks"]::after {
     left: -63px;
+  }
+
+  .sedona-form__section--emotions {
+    margin-bottom: 61px;
   }
 
   .sedona-form__describe-emotions {

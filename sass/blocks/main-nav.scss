@@ -13,13 +13,12 @@
   position: absolute;
   top: 13px;
   right: 6%;
-  width: 25px; //22.928px
-  height: 27px; //21.982px
-  background: $sedona-blue url("../img/icon-menu.svg") no-repeat center;
+  width: 22px; //22.928px
+  height: 24px; //21.982px
+  background: transparent url("../img/icon-menu.svg") no-repeat center;
   border: none;
   cursor: pointer;
   z-index: 1;
-  outline: 1px solid red;
 }
 
 .main-nav__toggle-btn--js-active {
@@ -33,12 +32,20 @@
     bottom: 7px;
   }
   font: bold 1.8em/2.2222222222em $font-sans; //18/40
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
   text-transform: uppercase;
   background-color: $sedona-blue;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: #669ec0;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
 }
 
 .main-nav__item--logo {
@@ -47,7 +54,6 @@
   min-height: 59px;
   margin: 0 auto;
   z-index: 1;
-  outline: 1px solid green;
 }
 
 .main-nav__item--logo-not-index {
@@ -68,15 +74,12 @@
     align-items: flex-start;
     width: 100%;
   }
-
   .main-nav__item {
     width: 20%;
-    outline: 1px solid red;
   }
   .main-nav__item--form {
     margin-right: 0;
     margin-left: auto;
-    background: red;
   }
   .main-nav__link {
     padding: {
@@ -89,12 +92,43 @@
     color: #000;
     background-color: #fff;
     border: none;
+    &:hover {
+      color: $sedona-blue;
+      background-color: #fff;
+    }
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+    }
   }
+
+  .main-nav__link--active {
+    color: #766357;
+    &:hover {
+      color: #604e43;
+    }
+    &:active {
+      color: lighten(#766357,40%);
+    }
+  }
+
   .main-nav__item--logo {
     position: absolute;
     width: 102px;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+}
+
+//Desktop
+@media #{$desktop} {
+  .main-nav__item--logo {
+    width: 187px;
+  }
+  .main-nav__logo-link,
+  .main-nav__logo-img {
+    width: 187px;
+    min-height: 97px;
   }
 }
