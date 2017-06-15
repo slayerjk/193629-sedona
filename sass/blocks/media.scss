@@ -161,24 +161,35 @@
 .media__video-control {
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   cursor: pointer;
   &--replay {
     width: 16px;
     height: 20px;
     margin-right: 57%;
-    background: transparent url("../img/icon-video-replay.svg");
   }
   &--subtitles {
     width: 32px;
     height: 20px;
-    background: transparent url("../img/icon-video-subtitles.svg");
   }
   &--fullscreen {
     margin-left: auto;
     width: 20px;
     height: 20px;
-    background: transparent url("../img/icon-video-fullscreen.svg");
   }
+}
+
+.media__video-icon {
+  fill: #000;
+  opacity: 0.5;
+}
+
+.media__video-control:hover .media__video-icon {
+  opacity: 1;
+}
+
+.media__video-control:active .media__video-icon {
+  opacity: 0.3;
 }
 
 //Tablet version
@@ -264,7 +275,6 @@
     line-height: 0.8666666667em; //26
   }
   .media__item-img--video {
-    //check
     height: 500px;
   }
   .media__video-overlay {
@@ -305,16 +315,14 @@
     &--replay {
       margin-left: 3%;
       margin-right: 75.5%;
-      background: transparent url("../img/icon-video-replay--tablet.svg");
       transform: translateX(100%);
-    }
-    &--subtitles {
-      background: transparent url("../img/icon-video-subtitles--tablet.svg");
     }
     &--fullscreen {
       margin-right: 6.3%;
-      background: transparent url("../img/icon-video-fullscreen--tablet.svg");
     }
+  }
+  .media__video-icon {
+    fill: #fff;
   }
 }
 
@@ -379,14 +387,12 @@
       bottom: 0px;
     }
   }
-
   .media__title-video {
     margin-bottom: 32px;
     padding: {
       top: 0px;
     }
   }
-
   .media__item-video-desc {
     margin-bottom: 70px;
     padding: 0 300px;
@@ -396,11 +402,9 @@
     width: 800px;
     margin-top: -91px;
   }
-
   .media__video-scale {
     height: 92px;
   }
-
   .media__video-bar {
     left: 293px;
     width: 545px;
@@ -410,14 +414,12 @@
     width: 10px;
     height: 10px;
   }
-
   .media__video-controls {
     margin: 0;
     width: 100%;
     padding: 0;
     background-color: transparent;
   }
-
   .media__video-control {
     transform: none;
     &--replay {

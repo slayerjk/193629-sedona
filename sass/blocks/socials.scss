@@ -3,32 +3,34 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 150px;
+  padding-top: 13px;
 }
 
 .socials__btn {
+  position: relative;
   display: inline-block;
-  width: 45px; //check
-  padding: {
-    top: 29px;
-    bottom: 8px;
-  }
+  width: 46px;
+  height: 47px;
   text-indent: -10000px;
-  //background-color:$sedona-blue;
-  &--twitter {
-    background: $sedona-blue url('../img/icon-twitter.svg') no-repeat center;
-  }
-  &--facebook {
-    background: $sedona-blue url('../img/icon-facebook.svg') no-repeat center;
-  }
-  &--youtube {
-    background: $sedona-blue url('../img/icon-youtube.svg') no-repeat center;
-  }
+  background-color:$sedona-blue;
   &:hover {
     background-color: $sedona-blue-hover;
+  }
+  &:hover .socials__icon {
+    fill: rgba(255, 255, 255, 1);
   }
   &:active {
     background-color: $sedona-blue-active;
   }
+  &:active .socials__icon {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.socials__icon {
+  display: block;
+  @include center-position();
+  fill: rgba(255, 255, 255, 0.9);
 }
 
 //Tablet version
