@@ -65,16 +65,16 @@
 
     <section class="sedona-form">
       <div class="sedona-form__wrapper wrapper-center">
-        <form class="sedona-form__sections" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="sedona-form__sections sedona-form__js-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="sedona-form__section sedona-form__section--title sedona-form__section--small sedona-form__section--introduce">
             <h2 class="sedona-form__title sedona-form__title--introduce">Представьтесь:</h2>
             <div class="sedona-form__block">
               <label for="name" class="sedona-form__label">Имя<sup>*</sup>:</label>
-              <input id="name" class="sedona-form__input" type="text" name="user-name" placeholder="Петр" required>
+              <input id="name" class="sedona-form__input sedona-form__input--js-required" type="text" name="user-name" placeholder="Петр" required>
             </div>
             <div class="sedona-form__block">
               <label for="surname" class="sedona-form__label">Фамилия<sup>*</sup>:</label>
-              <input id="surname" class="sedona-form__input" type="text" name="user-surname" placeholder="Иванов" required>
+              <input id="surname" class="sedona-form__input sedona-form__input--js-required" type="text" name="user-surname" placeholder="Иванов" required>
             </div>
             <div class="sedona-form__block">
               <label for="patronymic" class="sedona-form__label">Отчество:</label>
@@ -86,12 +86,12 @@
             <div class="sedona-form__block sedona-form__block--contacts">
               <div class="sedona-form__cotacts-icon sedona-form__cotacts-icon--tel"></div>
               <label for="phone" class="sedona-form__label sedona-form__label--contacts"><span class="sedona-form__text-to-disable">Контактный </span>телефон<sup>*</sup>:</label>
-              <input id="phone" class="sedona-form__input sedona-form__input--contacts" type="tel" name="user-phone" placeholder="Введите телефон" required>
+              <input id="phone" class="sedona-form__input sedona-form__input--contacts sedona-form__input--js-required" type="tel" name="user-phone" placeholder="Введите телефон" required>
             </div>
             <div class="sedona-form__block sedona-form__block--contacts">
               <div class="sedona-form__cotacts-icon sedona-form__cotacts-icon--mail"></div>
               <label for="email" class="sedona-form__label sedona-form__label--contacts">Электронная почта<sup>*</sup>:</label>
-              <input id="email" class="sedona-form__input sedona-form__input--contacts" type="email" name="user-email" placeholder="Введите e-mail" required>
+              <input id="email" class="sedona-form__input sedona-form__input--contacts sedona-form__input--js-required" type="email" name="user-email" placeholder="Введите e-mail" required>
             </div>
           </div>
           <div class="sedona-form__section sedona-form__section--select sedona-form__section--small">
@@ -184,10 +184,32 @@
       </div>
     </footer>
 
+    <div class="sedona-form__overlay"></div>
+
+    <div class="sedona-form__modal-windows">
+      <div class="sedona-form__modal-win sedona-form__modal-win--succsess">
+        <h2 class="sedona-form__modal-win-title">Ваш отзыв отправлен!</h2>
+        <p class="sedoan-form__modal-win-desc">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          <br class="sedona-form__modal-win-text-transition">В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <div class="sedona-form__modal-win-btn-section">
+          <button class="sedona-form__modal-win-btn sedona-form__modal-win-btn--close btn" type="button">Закрыть окно</button>
+        </div>
+      </div>
+      <div class="sedona-form__modal-win sedona-form__modal-win--error">
+        <h2 class="sedona-form__modal-win-title">Что-то пошло не так!</h2>
+        <p class="sedoan-form__modal-win-desc sedoan-form__modal-win-desc--error">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <div class="sedona-form__modal-win-btn-section sedona-form__modal-win-btn-section--error">
+          <button class="sedona-form__modal-win-btn sedona-form__modal-win-btn--close btn" type="button">Ok</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-ui-1.12.1.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
