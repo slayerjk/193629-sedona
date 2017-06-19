@@ -22,7 +22,7 @@ $(document).ready(function () {
   /*sedona-form modal windows */
   $('.sedona-form__overlay, .sedona-form__modal-win').hide();
   $('.sedona-form__modal-win-btn').on('click', function () {
-    $('.sedona-form__modal-win').fadeOut('slow');
+    $('.sedona-form__modal-win').fadeOut('fast');
     $('.sedona-form__overlay').hide();
   });
 
