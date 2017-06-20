@@ -4,6 +4,15 @@
 $(document).ready(function () {
   'use strict';
 
+  //event.preventDefault() polyfill for  IE9+
+  $.fn.eventPreventDefaultSafe = function () {
+    if (event.preventDefault) {
+      event.preventDefault();
+    } else {
+      event.returnValue = false;
+    }
+  };
+
   /*sedona page-header menu button behaviour */
   var
     ScreenWidth = screen.width,
@@ -32,9 +41,9 @@ $(document).ready(function () {
         $('.sedona-form__overlay').show();
         $('.sedona-form__modal-win--error').fadeIn('slow');
         $(this).addClass('sedona-form__input--error').prop('placeholder', 'Поле обязателно для заполнения');
-        event.preventDefault();
+        $.fn.eventPreventDefaultSafe();
       } else {
-        event.preventDefault();
+        $.fn.eventPreventDefaultSafe();
         $('.sedona-form__overlay').show();
         $('.sedona-form__modal-win--succsess').fadeIn('slow');
         $('.sedona-form__modal-win-btn').on('click', function () {
@@ -59,13 +68,6 @@ $(document).ready(function () {
     });
   });
   */
-/*event.preventDefault() gor IE9(event.returnValue = false)*/
 /*
-  $.fn.eventPreventDefaultSafe = function () {
-    if (event.preventDefault) {
-      event.preventDefault();
-    } else {
-      event.returnValue = false;
-    }
-  };
+
 */

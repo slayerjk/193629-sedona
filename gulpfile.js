@@ -1,19 +1,20 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var mqpacker = require("css-mqpacker");
-var minify = require("gulp-csso");
-var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
-var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
-var server = require("browser-sync").create();
-var run = require("run-sequence");
-var del = require("del");
+var
+  gulp = require("gulp"),
+  sass = require("gulp-sass"),
+  plumber = require("gulp-plumber"),
+  postcss = require("gulp-postcss"),
+  autoprefixer = require("autoprefixer"),
+  mqpacker = require("css-mqpacker"),
+  minify = require("gulp-csso"),
+  rename = require("gulp-rename"),
+  imagemin = require("gulp-imagemin"),
+  svgstore = require("gulp-svgstore"),
+  svgmin = require("gulp-svgmin"),
+  server = require("browser-sync").create(),
+  run = require("run-sequence"),
+  del = require("del");
 
 gulp.task("html:copy", function() {
   return gulp.src("*.html")
