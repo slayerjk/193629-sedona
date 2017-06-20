@@ -10,7 +10,7 @@
   position: relative;
   &--blue {
     padding: {
-      top: 42px;
+      top: 40px;
       bottom: 37px;
     }
     background-color: $sedona-blue;
@@ -103,11 +103,14 @@
 .features__item-icon {
   position: absolute;
   top: 17%;
-  left: 6%;
+  left: 6.5%;
   width: 40px;
   height: 40px;
   &--burger {
     top: 14%;
+  }
+  &--gift {
+    top: 16%;
   }
 }
 
@@ -126,7 +129,7 @@
     }
   }
 }
-
+/*
 //Tablet version
 @media only screen and (min-width: 768px) {
   .features__wrapper {
@@ -254,7 +257,8 @@
     transform: translateX(-50%);
   }
 }
-
+*/
+/*
 //Desktop version
 @media only screen and (min-width: 1200px) {
   .features__item {
@@ -312,3 +316,4 @@
     display: inline-block;
   }
 }
+*/
