@@ -1,6 +1,5 @@
 /*global $, jQuery*/
 
-
 $(document).ready(function () {
   'use strict';
 
@@ -40,7 +39,7 @@ $(document).ready(function () {
       if (!$(this).val()) {
         $('.sedona-form__overlay').show();
         $('.sedona-form__modal-win--error').fadeIn('slow');
-        $(this).addClass('sedona-form__input--error').prop('placeholder', 'Поле обязателно для заполнения');
+        $(this).addClass('sedona-form__input--error').prop('placeholder', 'Поле обязателно');
         $.fn.eventPreventDefaultSafe();
       } else {
         $.fn.eventPreventDefaultSafe();
@@ -54,20 +53,3 @@ $(document).ready(function () {
   });
 
 });
-
-/*_____etc hints_____*/
-/*jQuery Datepicker(datepicker-ru.js - is needed from jQueryUI i18n dir)*/
-/*
-  $.datepicker.setDefaults($.datepicker.regional['']);
-  $.datepicker.setDefaults($.datepicker.regional['ru']);
-
-  $(function () {
-    $('.input_dater').datepicker({
-      dateFormat: 'dd MM yy',
-      minDate: new Date()
-    });
-  });
-  */
-/*
-
-*/

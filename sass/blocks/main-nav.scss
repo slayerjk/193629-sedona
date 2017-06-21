@@ -65,7 +65,7 @@
   width: 102px; //101.668px
   min-height: 84px; //83.984px
 }
-/*
+
 //Tablet version
 @media only screen and (min-width: 768px) {
   .main-nav__list {
@@ -120,8 +120,7 @@
     transform: translate(-50%, 0);
   }
 }
-*/
-/*
+
 //Desktop
 @media #{$desktop} {
   .main-nav__item--logo {
@@ -130,7 +129,6 @@
   .main-nav__logo-link,
   .main-nav__logo-img {
     width: 187px;
-    min-height: 97px;
+    height: 97px;
   }
 }
-*/
