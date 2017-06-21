@@ -38,7 +38,7 @@
     bottom: 18px;
   }
 }
-/*
+
 //Tablet version
 @media only screen and (min-width: 768px) {
   .search-hotel__wrapper {
@@ -55,11 +55,12 @@
     line-height: 0.8666666667em; //26
   }
 
-  .search-hotel__text-hyphenation {
+  .search-hotel__text-transfer {
     display: inline-block;
   }
 
   .search-hotel__desc {
+    width: 100%;
     margin-bottom: 42px;
     padding: 0;
   }
@@ -71,8 +72,7 @@
     }
   }
 }
-*/
-/*
+
 //Desktop version
 @media only screen and (min-width: 1200px) {
   .search-hotel__wrapper {
@@ -83,8 +83,7 @@
     }
   }
   .search-hotel__desc {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
     padding: 0;
   }
 }
-*/

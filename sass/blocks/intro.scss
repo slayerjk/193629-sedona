@@ -96,13 +96,13 @@
     display: none;
   }
 }
-/*
+
 //Tablet
 @media only screen and (min-width: 768px) {
   .intro__images-block {
     height: 519px;
     background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center 100%, url('../img/bg-back-tablet@1x.jpg') no-repeat center;
-    background-size: contain, cover;
+    background-size: 778px auto, cover;
     &--not-index {
       height: 291px;
     }
@@ -115,12 +115,12 @@
   }
   .intro__welcome-text-img {
     top: 48.6%;
-  }
-  .intro__sedona-text-img {
-    @include center-position;
-    top: 46.5%;
-    left: 50.5%;
-    max-width: 69.9%;
+    &--sedona {
+      @include center-position;
+      top: 46.5%;
+      left: 50.5%;
+      max-width: 69.9%;
+    }
   }
   .intro__desc-block {
     padding: {
@@ -132,10 +132,16 @@
     &--not-index {
       padding: {
         top: 55px;
+        bottom: 70px;
+      }
+    }
+    &--sedona-form {
+      padding: {
         bottom: 68px;
       }
     }
   }
+
   .intro__title {
     font: bold 2.1em/1.2380952381em $font-sans; //21/26
     text-align: center;
@@ -149,8 +155,7 @@
     padding: 0 8%;
   }
 }
-*/
-/*
+
 //Desktop version
 @media only screen and (min-width: 1200px) {
   .intro__images-block {
@@ -178,7 +183,7 @@
     padding: {
       left: 300px;
       right: 300px;
-      bottom: 46px;
+      bottom: 50px;
     }
     &--not-index {
       padding: {
@@ -196,4 +201,3 @@
     padding: 0 80px;
   }
 }
-*/

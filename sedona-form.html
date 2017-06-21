@@ -68,15 +68,15 @@
         <form class="sedona-form__sections sedona-form__js-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="sedona-form__section sedona-form__section--title sedona-form__section--small sedona-form__section--introduce">
             <h2 class="sedona-form__title sedona-form__title--introduce">Представьтесь:</h2>
-            <div class="sedona-form__block">
+            <div class="sedona-form__block sedona-form__block--introduce">
               <label for="name" class="sedona-form__label">Имя<sup>*</sup>:</label>
               <input id="name" class="sedona-form__input sedona-form__input--js-required" type="text" name="user-name" placeholder="Петр" required>
             </div>
-            <div class="sedona-form__block">
+            <div class="sedona-form__block sedona-form__block--introduce">
               <label for="surname" class="sedona-form__label">Фамилия<sup>*</sup>:</label>
               <input id="surname" class="sedona-form__input sedona-form__input--js-required" type="text" name="user-surname" placeholder="Иванов" required>
             </div>
-            <div class="sedona-form__block">
+            <div class="sedona-form__block sedona-form__block--introduce">
               <label for="patronymic" class="sedona-form__label">Отчество:</label>
               <input id="patronymic" class="sedona-form__input" type="text" name="user-patronymic" placeholder="Александрович">
             </div>
@@ -86,7 +86,7 @@
             <div class="sedona-form__block sedona-form__block--contacts">
               <div class="sedona-form__cotacts-icon sedona-form__cotacts-icon--tel"></div>
               <label for="phone" class="sedona-form__label sedona-form__label--contacts"><span class="sedona-form__text-to-disable">Контактный </span>телефон<sup>*</sup>:</label>
-              <input id="phone" class="sedona-form__input sedona-form__input--contacts sedona-form__input--js-required" type="tel" name="user-phone" placeholder="Введите телефон" required>
+              <input id="phone" class="sedona-form__input sedona-form__input--contacts sedona-form__input--js-required" type="tel" pattern="2[0-9]{3}-[0-9]{3}" name="user-phone" placeholder="Введите телефон" required>
             </div>
             <div class="sedona-form__block sedona-form__block--contacts">
               <div class="sedona-form__cotacts-icon sedona-form__cotacts-icon--mail"></div>
@@ -94,7 +94,7 @@
               <input id="email" class="sedona-form__input sedona-form__input--contacts sedona-form__input--js-required" type="email" name="user-email" placeholder="Введите e-mail" required>
             </div>
           </div>
-          <div class="sedona-form__section sedona-form__section--select sedona-form__section--small">
+          <div class="sedona-form__section sedona-form__section--select sedona-form__section--impression sedona-form__section--small">
             <h2 class="sedona-form__title sedona-form__title--select sedona-form__title--empression">Ваше общее впечатление:</h2>
             <div class="sedona-form__block sedona-form__block--select sedona-form__block--radio">
               <input id="pro" class="sedona-form__input sedona-form__input--radio" type="radio" name="vote" value="vote-pro" checked>
@@ -111,19 +111,19 @@
           </div>
           <div class="sedona-form__section sedona-form__section--select sedona-form__section--sites">
             <h2 class="sedona-form__title sedona-form__title--select sedona-form__title--decor sedona-form__title--sites">Посещенные<br class="sedona-form__text-transfer"> достопримечательности:</h2>
-            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites">
+            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites sedona-form__block--site-bridge">
               <input id="devil-bridge" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-devil-bridge" checked>
               <label for="devil-bridge" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Мост Дьявола</label>
             </div>
-            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites">
+            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites sedona-form__block--site-park">
               <input id="slide-park" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-slide-park" checked>
               <label for="slide-park" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Слайд-парк</label>
             </div>
-            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites">
+            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites sedona-form__block--site-mount">
               <input id="bell-mount" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-bell-mount">
               <label for="bell-mount" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Гора-Колокол</label>
             </div>
-            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites">
+            <div class="sedona-form__block sedona-form__block--select sedona-form__block--checkbox sedona-form__block--sites sedona-form__block--site-rocks">
               <input id="red-rocks" class="sedona-form__input sedona-form__input--checkbox" type="checkbox" name="visited" value="visited-red-rocks" checked>
               <label for="red-rocks" class="sedona-form__label sedona-form__label--select sedona-form__label--checkbox">Красные скалы</label>
             </div>
@@ -172,7 +172,7 @@
               </svg>
             </a>
           </div>
-          <div class="page-footer__wrapper-block page-footer__made-by">
+          <div class="page-footer__wrapper-block page-footer__made-by page-footer__made-by--form">
             <span class="page-footer__desc">Разработано</span>
             <a class="page-footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="page-foote__htmlacademy-logo" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
