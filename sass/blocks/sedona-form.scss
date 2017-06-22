@@ -170,7 +170,7 @@
 .sedona-form__label--radio::before {
   @include pseudo;
   top: -47%;
-  left: 1%;
+  left: 0%;
   width: 55px;
   height: 55px;
   background-color: #f2f2f2;
@@ -182,7 +182,7 @@
 .sedona-form__input--radio[id="na"]:checked+.sedona-form__label--radio[for="na"]::after {
   @include pseudo;
   top: 20%;
-  left: 7%;
+  left: 17px;
   width: 21px;
   height: 21px;
   background-color: #000;
@@ -209,7 +209,7 @@
 .sedona-form__input--checkbox[id="red-rocks"]:checked+.sedona-form__label--checkbox[for="red-rocks"]::after {
   @include pseudo;
   top: 17%;
-  left: 6%;
+  left: 15px;
   width: 23px;
   height: 16px;
   background: transparent url("../img/icons/icon-tick.svg") no-repeat center;
@@ -590,7 +590,8 @@
   }
   .sedona-form__submit {
     width: 50%;
-    font: bold 2.1em/1.2380952381em $font-sans; //21/26
+    padding-right: 2.5%;
+    font: bold 2.1em/1.2380952381em $font-sans, Arial, sans-serif; //21/26
     color: rgba(255, 255, 255, 0.9);
   }
   .sedona-form__require-text {
@@ -768,5 +769,9 @@
   .sedona-form__describe-emotions {
     height: 161px;
     padding-left: 20px;
+  }
+
+  .sedona-form__submit {
+    padding-right: 0;
   }
 }

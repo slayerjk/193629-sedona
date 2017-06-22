@@ -88,6 +88,16 @@
   }
 }
 
+//Mini BP
+@media only screen and (min-width: 770px) {
+  .page-footer__inner-wrapper {
+    justify-content: space-between;
+  }
+  .page-footer__made-by {
+    margin-left: 0;
+  }
+}
+
 //Desktop version
 @media only screen and (min-width: 1200px) {
   .page-footer__inner-wrapper {
