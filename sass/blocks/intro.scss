@@ -110,7 +110,7 @@
   @media #{$retina} {
     .intro__images-block {
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center 100%, url('../img/bg-back-tablet@2x.jpg') no-repeat center;
-      background-size: 768px auto;
+      background-size: contain, cover;
     }
   }
   .intro__welcome-text-img {
@@ -173,7 +173,7 @@
     }
   }
 
-  .intro__sedona-text-img {
+  .intro__welcome-text-img--sedona {
     top: 103px;
     left: 370px;
     max-width: 69.9%;

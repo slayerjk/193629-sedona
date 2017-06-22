@@ -42,9 +42,17 @@
   }
 }
 
-//Desktop version
-@media only screen and (min-width: 768px) {
+//Mini BP
+@media only screen and (min-width: 770px) {
   .socials {
-    margin-left: 25%;
+    margin-left: 0%;
+  }
+}
+
+
+//Desktop version
+@media only screen and (min-width: 1200px) {
+  .socials {
+    margin-right: 100px;
   }
 }
