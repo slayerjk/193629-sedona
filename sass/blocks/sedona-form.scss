@@ -107,6 +107,11 @@
     background-color: #fff;
     border: 4px solid #e5e5e5;
   }
+  &:disabled,
+  &--disabled {
+    color: #fff;
+    background-color: #e5e5e5;
+  }
   &--error {
     padding: {
       top: 10px;
@@ -182,7 +187,7 @@
 .sedona-form__input--radio[id="contra"]:checked+.sedona-form__label--radio[for="contra"]::after,
 .sedona-form__input--radio[id="na"]:checked+.sedona-form__label--radio[for="na"]::after {
   @include pseudo;
-  top: 20%;
+  top: 5px;
   left: 17px;
   width: 21px;
   height: 21px;
@@ -209,7 +214,7 @@
 .sedona-form__input--checkbox[id="bell-mount"]:checked+.sedona-form__label--checkbox[for="bell-mount"]::after,
 .sedona-form__input--checkbox[id="red-rocks"]:checked+.sedona-form__label--checkbox[for="red-rocks"]::after {
   @include pseudo;
-  top: 17%;
+  top: 7px;
   left: 15px;
   width: 23px;
   height: 16px;
@@ -445,7 +450,6 @@
   .sedona-form__input--radio[id="pro"]:checked+.sedona-form__label--radio[for="pro"]::after,
   .sedona-form__input--radio[id="contra"]:checked+.sedona-form__label--radio[for="contra"]::after,
   .sedona-form__input--radio[id="na"]:checked+.sedona-form__label--radio[for="na"]::after {
-    top: 19%;
     left: 6.8%;
   }
   .sedona-form__section--introduce {
@@ -554,6 +558,7 @@
       padding-right: 4%;
     }
   }
+
   .sedona-form__title--sites {
     width: 100%;
     margin-bottom: 55px;
@@ -572,7 +577,6 @@
   .sedona-form__input--checkbox[id="slide-park"]:checked+.sedona-form__label--checkbox[for="slide-park"]::after,
   .sedona-form__input--checkbox[id="bell-mount"]:checked+.sedona-form__label--checkbox[for="bell-mount"]::after,
   .sedona-form__input--checkbox[id="red-rocks"]:checked+.sedona-form__label--checkbox[for="red-rocks"]::after {
-    top: 29%;
     left: -40%;
   }
   .sedona-form__section--emotions {
@@ -659,7 +663,6 @@
   .sedona-form__input--radio[id="pro"]:checked+.sedona-form__label--radio[for="pro"]::after,
   .sedona-form__input--radio[id="contra"]:checked+.sedona-form__label--radio[for="contra"]::after,
   .sedona-form__input--radio[id="na"]:checked+.sedona-form__label--radio[for="na"]::after {
-    top: 5px;
     left: 21px;
   }
   .sedona-form__section--introduce {
