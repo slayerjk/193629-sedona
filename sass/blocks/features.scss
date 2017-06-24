@@ -132,7 +132,6 @@
 @media only screen and (min-width: 768px) {
   .features__wrapper {
     flex-direction: row;
-    align-items: flex-start;
     flex-wrap: wrap;
   }
   .features__item {
@@ -171,6 +170,10 @@
     &--bridge {
       order: 6;
       background: #fff url('../img/photo-bridge-tablet@1x.jpg') no-repeat center;
+    }
+    &--grey {
+      height: auto;
+      padding-bottom: 47px;
     }
     &--area {
       order: 8;
@@ -269,7 +272,7 @@
       background: #fff url('../img/photo-bridge-desktop@1x.jpg') no-repeat center;
     }
     &--grey {
-      height: 255px;
+      padding-bottom: 67px;
     }
     &--icon-desc {
       padding-bottom: 83px;
